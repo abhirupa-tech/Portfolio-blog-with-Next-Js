@@ -38,8 +38,7 @@ export const DeveloperAbout = styled.div`
 `;
 
 export const Root = styled.div`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
-    url(${backgroundImg});
+    background-color: black;
     padding: 0;
     height: 100vh;
     background-position: center;

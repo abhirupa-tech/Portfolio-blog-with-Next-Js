@@ -2,11 +2,15 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import IntroductionSection from "./HomePage"
 import { Body, GlobalStyle } from "./index.styles"
+import ExperienceSection from "./Experiences"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (<>
     <GlobalStyle/>
-      <IntroductionSection/></>
+      <IntroductionSection/>
+      <ExperienceSection/>
+      
+    </>
   )
 }
 
