@@ -1,6 +1,6 @@
 /* Required */
 .slides {
-    grid-auto-columns: calc(50% - 16px);
+    grid-auto-columns: calc(33.33333% - 16px);
     gap: 32px;
   }
   

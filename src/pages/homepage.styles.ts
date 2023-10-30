@@ -28,7 +28,8 @@ export const Main = styled.div`
 export const DeveloperAbout = styled.div`
     color: #EFEFEF;
     font-family: 'Montserrat';
-    font-size: 1.4vw;
+    font-size: 1.8rem;
+    zoom: reset;
     width: 100%;
     font-style: normal;
     /* font-weight: 400; */

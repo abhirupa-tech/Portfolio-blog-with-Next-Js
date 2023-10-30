@@ -2,14 +2,13 @@ import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import IntroductionSection from "./HomePage";
 import { Body, GlobalStyle } from "./index.styles";
-import ExperienceSection from "./BlogSection/Experiences";
-import { useCarousel } from 'react-use-carousel-hook';
+import BlogSection from "./BlogSection/BlogSection";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (<>
     <GlobalStyle/>
       <IntroductionSection/>
-      <ExperienceSection/>
+      <BlogSection/>
       <div className="App">
       
     </div>
