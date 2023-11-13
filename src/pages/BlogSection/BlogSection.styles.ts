@@ -1,26 +1,38 @@
 import styled from "styled-components";
-import backgroundImg from "../images/bgCore.jpg";
+import backgroundImg from "../../images/BlogSectionBackground.png";
 import { Button } from "@mui/material";
 
 export const Root = styled.div`
-    background-color: black;
-    padding: 0;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 70vh;
+    background-color: #0c0965;
+    height: fit-content;
+    background-image: url(${backgroundImg});
     background-size: cover;
+    background-repeat: no-repeat;
+`;
+
+export const BlogContainer = styled.div`
+    background-color: transparent;
+    padding: 0;
+    /* height: 100vh; */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 `;
 
 export const MaterialButton = styled(Button)`
     && {text-align: center;
         align-content: center;
         color: ghostwhite;
-        margin-top: 40px;
+        margin-top: 20px;
         background-color: #2E3975;
-        font-family: 'Arial';
-        border-radius: 20px;
-        font-size: 20px;
-        padding: 10px 20px;
+        font-family: 'MontserratStandardLight';
+        border-radius: 10px;
+        font-size: 1.0em;
+        padding: 5px 20px;
+        display: grid;
+        text-align: center;
         width: fit-content;
     }
     &:hover {
@@ -28,6 +40,3 @@ export const MaterialButton = styled(Button)`
         color: whitesmoke;
     }
 `;
-
-
-

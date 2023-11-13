@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import backgroundImg from "../images/bgCore.jpg";
+import backgroundImg from "../images/HomePagebackground.png";
 import { Button } from "@mui/material";
-
-const bgFile = "../images/backgroundLight.png";
 
 export const DeveloperName = styled.div`
     color: #D3D3D3;
@@ -14,23 +12,22 @@ export const DeveloperName = styled.div`
     line-height: normal;
     letter-spacing: 5px;
     margin-top: 30vh;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 `;
 
 export const Main = styled.div`
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: flex;
     display: grid;
-    text-align: center;
+    text-align: left;
 `;
 
 export const DeveloperAbout = styled.div`
     color: #EFEFEF;
     font-family: 'Montserrat';
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     zoom: reset;
-    width: 100%;
+    width: 60%;
     font-style: normal;
     /* font-weight: 400; */
     line-height: normal;
@@ -39,7 +36,7 @@ export const DeveloperAbout = styled.div`
 `;
 
 export const Root = styled.div`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
+    background-image: 
     url(${backgroundImg});
     padding: 0;
     height: 100vh;

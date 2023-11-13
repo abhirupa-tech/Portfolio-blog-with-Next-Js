@@ -3,15 +3,14 @@ import type { HeadFC, PageProps } from "gatsby";
 import IntroductionSection from "./HomePage";
 import { Body, GlobalStyle } from "./index.styles";
 import BlogSection from "./BlogSection/BlogSection";
+import MentorshipSection from "./MentorshipSection/MentorshipSection";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (<>
     <GlobalStyle/>
       <IntroductionSection/>
       <BlogSection/>
-      <div className="App">
-      
-    </div>
+      <MentorshipSection/>
     </>
   )
 }
