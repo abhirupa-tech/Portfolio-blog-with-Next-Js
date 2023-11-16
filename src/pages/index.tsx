@@ -4,6 +4,7 @@ import IntroductionSection from "./HomePage";
 import { Body, GlobalStyle } from "./index.styles";
 import BlogSection from "./BlogSection/BlogSection";
 import MentorshipSection from "./MentorshipSection/MentorshipSection";
+import FooterSection from "./FooterSection/FooterSection";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (<>
@@ -11,6 +12,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <IntroductionSection/>
       <BlogSection/>
       <MentorshipSection/>
+      <FooterSection/>
     </>
   )
 }

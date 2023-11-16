@@ -14,9 +14,9 @@ export const Root = styled.div`
 export const MentorshipContainer = styled.div`
     margin: auto;
     width: 75%;    
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 `;
 
 export const MentorshipImage = styled(Container)`
@@ -37,31 +37,45 @@ export const MentorshipHeader = styled(Container)`
     font-size: 3.5rem;
     font-weight: 800;
     width: fit-content;
-    line-height: 0.1em;
+    line-height: 2px;
+    margin-top: 25vh;
 `;
 
 export const MentorshipAbout = styled(Container)`
     font-family: 'MontserratStandardLight';
     font-size: 1.2rem;
     color: antiquewhite;
+    margin-top: -10px;
 `;
 
 export const MaterialButton = styled(Button)`
-    && {text-align: center;
-        align-content: center;
+    && {
+        text-align: center;
         color: ghostwhite;
-        margin-top: 20px;
-        background-color: #2E3975;
         font-family: 'MontserratStandardLight';
         border-radius: 10px;
         font-size: 1.0em;
         padding: 5px 20px;
-        display: grid;
-        text-align: center;
+        margin-left: 24px;
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
         width: fit-content;
+        background-color: #824B3F;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
     }
     &:hover {
-        background-color: #172364!important;
+        background-color: #7D473B!important;
         color: whitesmoke;
     }
+`;
+
+export const RowCentered = styled.div`
+`
+export const CenteredButton = styled(Button)`
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
+  margin: auto;
 `;

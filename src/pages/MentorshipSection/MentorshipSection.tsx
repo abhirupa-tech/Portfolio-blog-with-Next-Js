@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Root, MaterialButton, MentorshipContainer, MentorshipImage, MentorshipHeader, MentorshipAbout} from "./MentorshipSection.styles";
+import {Root, MaterialButton, MentorshipContainer, MentorshipImage, MentorshipHeader, MentorshipAbout, CenteredButton, RowCentered} from "./MentorshipSection.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import "react-use-carousel-hook/dist/index.css";
 import { Box, Container } from "@mui/material";
@@ -26,10 +26,14 @@ const MentorshipSection: React.FC<{}> = () => {
                     redirect to the Blog Page and will briefly summarize the 
                     scontents of this blog.
                     </MentorshipAbout>
+                    
+                    <MaterialButton>
+                        Book a 1:1 Session
+                    </MaterialButton>
                 </Col>
             </Row>
-        </MentorshipContainer>    
-        <MaterialButton>Book a 1:1 Session</MaterialButton>
+        </MentorshipContainer>
+        
     </Root>
   )
   }

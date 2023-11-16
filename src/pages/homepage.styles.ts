@@ -5,12 +5,12 @@ import { Button } from "@mui/material";
 export const DeveloperName = styled.div`
     color: #D3D3D3;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'AbrilFatface';
+    font-family: 'MontserratHeaderBold';
     font-size: 6vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 5px;
+    letter-spacing: 0.2px;
     margin-top: 30vh;
 `;
 
@@ -46,7 +46,12 @@ export const Root = styled.div`
 `;
 
 export const Icon = styled.image`
-    background-color: yellow;
+    padding-right: 10px;
+    cursor: pointer;
+`;
+
+export const IconContainer = styled.image`
+    margin-top: 20px;
 `;
 
 export const MaterialButton = styled(Button)`
