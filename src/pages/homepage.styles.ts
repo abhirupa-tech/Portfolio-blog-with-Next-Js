@@ -11,7 +11,7 @@ export const DeveloperName = styled.div`
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
-    margin-top: 30vh;
+    margin-top: 20vh;
 `;
 
 export const Main = styled.div`
@@ -25,7 +25,7 @@ export const Main = styled.div`
 export const DeveloperAbout = styled.div`
     color: #EFEFEF;
     font-family: 'Montserrat';
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     zoom: reset;
     width: 60%;
     font-style: normal;
@@ -60,9 +60,9 @@ export const MaterialButton = styled(Button)`
         color: ghostwhite;
         margin-top: 40px;
         background-color: #2E3975;
-        font-family: 'Arial';
+        font-family: 'MontserratStandardLight';
         border-radius: 20px;
-        font-size: 20px;
+        font-size: 1.0rem;
         padding: 10px 20px;
         width: fit-content;
     }

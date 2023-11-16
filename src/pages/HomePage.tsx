@@ -25,8 +25,8 @@ const IntroductionSection: React.FC<{}> = () => {
           <Icon><IconGmail/></Icon>
         </IconContainer> 
         
-        <ProgressBar/>        
-        <ProgressBar/>
+        <ProgressBar label={"Years Of Experience: 2+"} progressValue={20}/>        
+        <ProgressBar label={"Projects Worked on: 3+"} progressValue={30}/>
         <MaterialButton>Let me Mentor You</MaterialButton>
       </Main>
     </Root>
