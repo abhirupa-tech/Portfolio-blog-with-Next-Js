@@ -1,6 +1,6 @@
 import { StyleRounded } from "@mui/icons-material";
 import styled from "styled-components";
-import BlogImage from "../../images/img.jpg";
+import BlogImage from "../../images/blog1img.jpg";
 
 export const Root = styled.div`   
     flex-basis: 33.33%;

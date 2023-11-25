@@ -10,14 +10,14 @@ export const blogItems : BlogData[] = [
       imageUrl: "",
     },    
     {
-      title: "Reduce you React App Size in an Intelligent Way",
+      title: "Revamp your Resume in 10 Quick Steps",
       content: "This is some dummy content that will be replaced",
       tags: ["Tech"],
       date: "#390099",
       imageUrl: "",
     }, 
     {
-      title: "Reduce you React App Size in an Intelligent Way",
+      title: "Artificial Intelligence For a Tenth Grader",
       content: "This is some dummy content that will be replaced",
       tags: ["Tech"],
       date: "#390099",
