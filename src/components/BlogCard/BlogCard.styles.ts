@@ -15,7 +15,7 @@ export const Blog = styled.div`
 `;
 
 export const BlogCardHeader = styled.div`
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     font-family: 'MontserratHeaderBold';
     height: 30%;
 `;
@@ -23,7 +23,8 @@ export const BlogCardHeader = styled.div`
 export const BlogCardContent = styled.div`
     margin-top: 2vh;
     font-family: 'MontserratStandardLight';
-    font-size: 1.2rem;
+    font-size: 1.0rem;
+    font-weight:600;
     height: auto;
 `;
 
@@ -37,11 +38,12 @@ export const BlogCardImage = styled.div`
     background-size: cover;
 `;
 
-export const BlogCardTags = styled.div`
+export const BlogCardTag = styled.div`
     background-color: pink;
+    font-family: 'MontserratStandardlight';
     margin-top: 20px;
     width: fit-content;
-    border-radius: 30px;
+    border-radius: 5px;
     padding: 3px 12px 3px 12px;
     height: 20px;
 `;

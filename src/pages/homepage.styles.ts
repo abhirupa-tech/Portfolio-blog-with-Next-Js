@@ -10,16 +10,16 @@ export const DeveloperName = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.2px;
+    letter-spacing: -4px;
     margin-top: 20vh;
 `;
 
 export const Main = styled.div`
-    width: 80%;
+    width: 40vw;
     margin: auto;
     display: flex;
-    display: grid;
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const DeveloperAbout = styled.div`
@@ -27,22 +27,20 @@ export const DeveloperAbout = styled.div`
     font-family: 'Montserrat';
     font-size: 1.4rem;
     zoom: reset;
-    width: 60%;
-    font-style: normal;
-    /* font-weight: 400; */
-    line-height: normal;
-    letter-spacing: 1.4px;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-align: center;
 `;
 
 export const Root = styled.div`
     background-image: 
     url(${backgroundImg});
     padding: 0;
-    height: 100vh;
+    height: 78vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
 `;
 
 export const Icon = styled.image`
@@ -65,6 +63,9 @@ export const MaterialButton = styled(Button)`
         font-size: 1.0rem;
         padding: 10px 20px;
         width: fit-content;
+        
+    text-align: center;
+    align-content: center;
     }
     &:hover {
         background-color: #172364!important;

@@ -9,12 +9,14 @@ export const Root = styled.div`
     background-image: url(${backgroundImg});
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const BlogContainer = styled.div`
     background-color: transparent;
     padding: 0;
-    /* height: 100vh; */
     width: 70%;
     margin: 0 auto;
     display: flex;

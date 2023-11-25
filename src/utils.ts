@@ -1,33 +1,27 @@
-export const items = [
+import { BlogData } from "./components/BlogCard/BlogCard";
+
+export const blogItems : BlogData[] = [
     {
-      title: "This is Sample Title 1",
-      content: "This is some sample content that would finally be replaced by Blog Preview Text or Medium Article Links",
-      bgColor: "#390099",
-    },
+      title: "Reduce your React App Size in an Intelligent Way",
+      content: `This is some dummy content that will be replaced, I have this added
+      just to test the number of lines that would fit in this card. After max lines I will add elipses`,
+      tags: ["Tech"],
+      date: "#390099",
+      imageUrl: "",
+    },    
     {
-      title: "This is Sample Title 2",
-      content: "This is some sample content that would finally be replaced by Blog Preview Text or Medium Article Links",
-      bgColor: "#9e0059"
-    },
+      title: "Reduce you React App Size in an Intelligent Way",
+      content: "This is some dummy content that will be replaced",
+      tags: ["Tech"],
+      date: "#390099",
+      imageUrl: "",
+    }, 
     {
-      title: "This is Sample Title 3",
-      content: "This is some sample content that would finally be replaced by Blog Preview Text or Medium Article Links",
-      bgColor: "#ff0054"
-    },
-    {
-      title: "This is Sample Title 4",
-      content: "This is some sample content that would finally be replaced by Blog Preview Text or Medium Article Links",
-      bgColor: "#ff5400"
-    },
-    {
-      title: "This is Sample Title 5",
-      content: "This is some sample content that would finally be replaced by Blog Preview Text or Medium Article Links",
-      bgColor: "#ffbd00"
-    },
-    {
-      title: "This is Sample Title 6",
-      content: "This is some sample content that would finally be replaced by Blog Preview Text or Medium Article Links",
-      bgColor: "#52b788"
+      title: "Reduce you React App Size in an Intelligent Way",
+      content: "This is some dummy content that will be replaced",
+      tags: ["Tech"],
+      date: "#390099",
+      imageUrl: "",
     }
   ];
   
