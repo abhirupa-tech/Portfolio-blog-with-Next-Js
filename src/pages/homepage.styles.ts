@@ -62,10 +62,9 @@ export const MaterialButton = styled(Button)`
         border-radius: 20px;
         font-size: 1.0rem;
         padding: 10px 20px;
-        width: fit-content;
-        
-    text-align: center;
-    align-content: center;
+        width: fit-content;        
+        text-align: center;
+        align-content: center;
     }
     &:hover {
         background-color: #172364!important;
