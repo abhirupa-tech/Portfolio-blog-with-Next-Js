@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import backgroundImg from "../../images/BlogSectionBackground.png";
+// import backgroundImg from "../../images/BlogSectionBackground.png";
 import { Button } from "@mui/material";
 
 export const Root = styled.div`
     height: 70vh;
     background-color: #0c0965;
     height: fit-content;
-    background-image: url(${backgroundImg});
+    // background-image: url(${backgroundImg});
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
