@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import backgroundImg from "../images/HomePagebackground.png";
 import { Button } from "@mui/material";
+import { Col, Row } from "react-grid-system";
 
 export const DeveloperName = styled.div`
     color: #D3D3D3;
@@ -15,7 +16,6 @@ export const DeveloperName = styled.div`
 `;
 
 export const Main = styled.div`
-    width: 40vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -37,10 +37,9 @@ export const Root = styled.div`
     background-image: 
     url(${backgroundImg});
     padding: 0;
-    height: 78vh;
-    background-position: center;
+    background-position: ;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
 `;
 
 export const Icon = styled.image`
@@ -72,4 +71,27 @@ export const MaterialButton = styled(Button)`
     }
 `;
 
+export const IntroductionContainer = styled(Row)`
+    margin-left: 5vw!important;    
+    margin-right: 5vw!important;
+    padding:0px!important;    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const IntroductionColumn = styled(Col)`
+    margin: auto!important;
+    padding:0px!important;`
+;
+export const DeveloperIntro = styled(Col)`
+    margin: auto!important;
+    width: 30vw;
+    padding:0px!important;`
+;
+
+// export const IntroductionContainer = styled(Row)`
+// margin: 0px!important;
+// padding:0px!important;`
+// ;
 

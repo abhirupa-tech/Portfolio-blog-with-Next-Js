@@ -7,7 +7,7 @@ import MontserratBlack from "../fonts/Montserrat-Black.ttf";
 
 export const Body = styled.div`
     /* background-image : yellow; */
-    width: 70%;
+    // width: 70%;
 `;
 
 import { createGlobalStyle } from 'styled-components'
