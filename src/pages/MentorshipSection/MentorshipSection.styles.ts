@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import backgroundImg from "../../images/BackgroundMentorship.png";
-import MentorshipImg from "../../images/MentorshipSectionImage.jpg";
+import MentorshipImg from "../../images/BackgroundMentorship.png";
 import { Button, Container } from "@mui/material";
 
 export const Root = styled.div`

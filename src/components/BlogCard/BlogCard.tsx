@@ -25,9 +25,7 @@ const BlogCard: React.FC<BlogData> = ({
           <BlogCardContent>{content}</BlogCardContent>
         </CardContent>
         <CardActions>
-            <Button size="small" color="primary">
-              Share
-            </Button>
+            <Button size="small" color="primary"> Continue Reading  </Button>
           </CardActions>
       </Blog>
     </Root>

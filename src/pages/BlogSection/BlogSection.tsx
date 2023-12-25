@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Root, BlogContainer, MaterialButton} from "./BlogSection.styles";
+import {Root, BlogContainer, MaterialButton} from "../HomePageBlog/BlogSection.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import "react-use-carousel-hook/dist/index.css";
 import { blogItems } from "../../utils";
