@@ -1,14 +1,9 @@
 import styled from "styled-components";
-import backgroundImg from "../../images/BackgroundMentorship.png";
-import MentorshipImg from "../../images/BackgroundMentorship.png";
 import { Button, Container } from "@mui/material";
 
 export const Root = styled.div`
     height: 85vh;
-    background-image: url(${backgroundImg});
-    background-color: aquamarine;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #efefef;
 `;
 
 export const MentorshipContainer = styled.div`
@@ -21,61 +16,59 @@ export const MentorshipContainer = styled.div`
 
 export const MentorshipImage = styled(Container)`
     height: 65vh;
-    background-image: url(${MentorshipImg});
-    background-size: cover;    
-    background-repeat: no-repeat;
-    border: 3px solid #000;
-    position: relative;
-    top: 50%;
-    transform: translateY(-35%);
+ n
 `;
 
-export const MentorshipHeader = styled(Container)`
-    color: #D4D4D4;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    font-family: 'MontserratBlack';
-    font-size: 3.5rem;
-    font-weight: 800;
-    width: fit-content;
-    line-height: 2px;
-    margin-top: 25vh;
+export const MentorshipHeader = styled.div`
+     margin-top: 10vh;
+    background: linear-gradient(272deg,#3619f2 12.22%,#6b32ae 52.69%,#450185 98.47%);
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    leading-trim: both;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    font-family: 'MontserratHeaderBold';
+    font-size: 8vh;
+    font-weight: bolder;
+    line-height: 9vh;
+    letter-spacing: -3px;
 `;
 
-export const MentorshipAbout = styled(Container)`
+export const MentorshipAbout = styled.div`
+    color: #000;
+    margin-top: 2vh;
     font-family: 'MontserratStandardLight';
-    font-size: 1.2rem;
-    color: antiquewhite;
-    margin-top: -10px;
+    font-size: 2.5vh;
+    font-weight: 600;
+    letter-spacing: 1.2px;
 `;
 
-export const MaterialButton = styled(Button)`
-    && {
-        text-align: center;
-        color: ghostwhite;
-        font-family: 'MontserratStandardLight';
-        border-radius: 10px;
-        font-size: 1.0em;
-        padding: 5px 20px;
-        margin-left: 24px;
-        display: flex;
-        margin-top: 15px;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
-        background-color: #824B3F;
-        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
-    }
+export const MaterialButton = styled.div`
+    text-align: center;
+    align-content: center;
+    color: ghostwhite;
+    margin-top: 6vh;
+    background: linear-gradient(#f33c6d, #a30d2c);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'MontserratStandardLight';
+    font-size: 2.5vh;
+    font-weight: 600;
+    width: fit-content;
+    display: inline-block;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    letter-spacing:1px;
     &:hover {
-        background-color: #7D473B!important;
+        background: linear-gradient(#b10a37,#9f0625);
         color: whitesmoke;
+        cursor: pointer;
+        shadow: 2px;
+        transition: all 0.8s ease-in-out;
     }
 `;
 
-export const RowCentered = styled.div`
-`
-export const CenteredButton = styled(Button)`
-  display: block;
-  /* justify-content: center;
-  align-items: center; */
-  margin: auto;
+export const Image = styled.img`
+    height: 50vh;
+    display: flex;
+    align-items: center;
 `;

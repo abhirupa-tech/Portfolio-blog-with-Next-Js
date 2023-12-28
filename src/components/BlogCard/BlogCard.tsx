@@ -1,7 +1,6 @@
 import * as React from "react"
-import {BlogCardContent, CardContent, BlogCardHeader, BlogCardImage, BlogCardTags, Blog, Root, BlogCardTag} from "./BlogCard.styles";
-import type { HeadFC, PageProps } from "gatsby"
-import { Box, Button, CardActions,} from "@mui/material";
+import {BlogCardContent, CardContent, BlogCardHeader, BlogCardImage, BlogCardTags, Blog, Root, BlogCardTag, CardAction} from "./BlogCard.styles";
+
 
 export interface BlogData {
   title : string,
@@ -23,10 +22,8 @@ const BlogCard: React.FC<BlogData> = ({
           <BlogCardHeader> {title} </BlogCardHeader>
           <BlogCardTag> {tags[0]}</BlogCardTag>
           <BlogCardContent>{content}</BlogCardContent>
+          <CardAction> Continue Reading  </CardAction>         
         </CardContent>
-        <CardActions>
-            <Button size="small" color="primary"> Continue Reading  </Button>
-          </CardActions>
       </Blog>
     </Root>
   )

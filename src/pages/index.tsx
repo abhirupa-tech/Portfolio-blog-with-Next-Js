@@ -2,7 +2,6 @@ import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import IntroductionSection from "./HomePageBlog/HomePage";
 import { Body, GlobalStyle } from "./index.styles";
-import BlogSection from "./BlogSection/BlogSection";
 import MentorshipSection from "./MentorshipSection/MentorshipSection";
 import FooterSection from "./FooterSection/FooterSection";
 

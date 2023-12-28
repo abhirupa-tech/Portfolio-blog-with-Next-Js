@@ -1,8 +1,7 @@
 import * as React from "react"
-import {DeveloperName, Root, DeveloperAbout, Icon, MaterialButton, IconContainer, IntroductionContainer, IntroductionColumn, DeveloperIntro} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, Icon, MaterialButton, IconContainer, IntroductionContainer, IntroductionColumn, DeveloperIntro, CustomRow} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
-import { BlogContainer } from "./BlogSection.styles";
 import Navbar from "../../components/Navbar/Navbar";
 import ProfilePicture from "../../images/ProfilePicture.png";
 
@@ -42,7 +41,7 @@ const IntroductionSection: React.FC<{}> = () => {
             
             {/* <ProgressBar label={"Years Of Experience: 2+"} progressValue={20}/>        
             <ProgressBar label={"Projects Worked on: 3+"} progressValue={30}/> */}
-            <MaterialButton>LET ME MENTOR YOU</MaterialButton>
+            <MaterialButton>Let me Mentor You</MaterialButton>
           </DeveloperIntro>
           
         </IntroductionColumn>
@@ -57,8 +56,12 @@ const IntroductionSection: React.FC<{}> = () => {
           <BlogCard {...blogItems[0]} />          
           <BlogCard {...blogItems[1]} />          
           <BlogCard {...blogItems[2]} />
-      </BlogContainer>      
-      <MaterialButton>Read More</MaterialButton>
+      </BlogContainer>
+
+      {/* Redirect User to your Medium Website Page       */}
+      <CustomRow>
+        <MaterialButton>Read Some More</MaterialButton>
+      </CustomRow>
     </Root>
   )
 }

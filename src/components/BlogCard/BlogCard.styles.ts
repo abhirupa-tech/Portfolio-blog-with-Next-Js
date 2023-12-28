@@ -1,24 +1,31 @@
 import { StyleRounded } from "@mui/icons-material";
 import styled from "styled-components";
-import BlogImage from "../../images/blog1img.jpg";
+import BlogImage from "../../images/blog3img.jpg";
+import { Button } from "@mui/material";
 
 export const Root = styled.div`   
     flex-basis: 33.33%;
 `;
 
 export const Blog = styled.div`
-   margin: 20px;   
+   margin: 30px;   
    border-radius: 20px;
-   height: 70vh;  
+   height: 60vh;  
    position: relative; 
    background-color: white;
    box-shadow: 10px 10px 15px 0px #00000040;
+   display: flex;
+   flex-direction: column;
 `;
 
 export const BlogCardHeader = styled.div`
     font-size: 2.8vh;
-    font-family: 'MontserratHeaderBold';
-    height: 30%;
+    font-family: 'MontserratHeaderBold';     
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const BlogCardContent = styled.div`
@@ -26,8 +33,13 @@ export const BlogCardContent = styled.div`
     font-family: 'MontserratStandardLight';
     font-size: 1.85vh;
     font-weight:600;
-    height: auto;
-    letter-spacing:1px
+    letter-spacing:1px;
+    flex-grow: 1;    
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const BlogCardImage = styled.div`
@@ -47,10 +59,14 @@ export const BlogCardTag = styled.div`
     border-radius: 5px;
     padding: 3px 12px 3px 12px;
     height: 20px;
-    float: bottom;
 `;
 
 export const CardContent = styled.div`
-    padding: 1vh;
+    margin: 4vh;
+    flex-grow:1;
 `;
 
+export const CardAction = styled(Button)`
+    padding: 0px!important;
+    margin-top: 1vh!important;
+`;

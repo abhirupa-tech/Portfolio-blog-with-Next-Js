@@ -9,7 +9,7 @@ export const DeveloperIntro = styled(Col)`
 ;
 
 export const DeveloperName = styled.div`
-    color: #DDDDDD;
+    color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'MontserratHeaderBold';
     font-size: 6vw;
@@ -66,16 +66,14 @@ export const MaterialButton = styled.div`
     text-align: center;
     align-content: center;
     color: ghostwhite;
-    margin-top: 8vh;
+    margin-top: 6vh;
     background: linear-gradient(#f33c6d, #a30d2c);
-    font-family: 'MontserratStandardLight';
-    // font-weight: bold;
     border-radius: 20px;
-    font-size: 1.8vh;
     padding: 10px 20px;
-    width: 12vw;        
-    text-align: center;
-    align-content: center;
+    width: fit-content;    
+    font-family: 'MontserratStandardLight';
+    font-size: 2.5vh;
+    font-weight: 600;
     display: inline-block;
     &:hover {
         background: linear-gradient(#eb5e84,#bf3030); !important;
@@ -102,5 +100,22 @@ export const IntroductionColumn = styled(Col)`
     margin: auto!important;
     padding:0px!important;`
 ;
+
+export const BlogContainer = styled.div`
+    background-color: transparent;
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+export const CustomRow = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
 
 
