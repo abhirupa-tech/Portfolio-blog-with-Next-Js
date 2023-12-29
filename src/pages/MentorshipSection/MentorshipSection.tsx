@@ -1,6 +1,5 @@
 import * as React from "react"
 import {Image, Root, MaterialButton, MentorshipContainer, MentorshipImage, MentorshipHeader, MentorshipAbout} from "./MentorshipSection.styles";
-import "react-use-carousel-hook/dist/index.css";
 import { Col, Row } from "react-grid-system";
 import MentorshipImg from "./../../images/mentorshipImage.svg";
 
