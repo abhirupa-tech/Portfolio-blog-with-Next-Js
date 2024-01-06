@@ -4,13 +4,12 @@ import Montserrat from "../fonts/MontserratAlternates-Light.ttf";
 import MontserratStandardLight from "../fonts/Montserrat-ExtraLight.ttf";
 import MontserratHeaderBold from "../fonts/Montserrat-Bold.ttf";
 import MontserratBlack from "../fonts/Montserrat-Black.ttf";
+import { createGlobalStyle } from 'styled-components'
 
 export const Body = styled.div`
     /* background-image : yellow; */
     // width: 70%;
 `;
-
-import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {

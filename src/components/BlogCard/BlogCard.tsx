@@ -1,5 +1,5 @@
 import * as React from "react"
-import {BlogCardContent, CardContent, BlogCardHeader, BlogCardImage, BlogCardTags, Blog, Root, BlogCardTag, CardAction} from "./BlogCard.styles";
+import {BlogCardContent, CardContent, BlogCardHeader, BlogCardImage, Blog, Root, BlogCardTag, CardAction} from "./BlogCard.styles";
 
 
 export interface BlogData {

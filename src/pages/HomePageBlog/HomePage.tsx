@@ -5,11 +5,11 @@ import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
 import ProfilePicture from "../../images/ProfilePicture.png";
 
-//Importing Pictures for Iconography
-import GithubIcon from "../../images/icons/githubIcon.svg";
-import InstagramIcon from "../../images/icons/instagramIcon.svg";
-import MailIcon from "../../images/icons/mailIcon.svg";
-import LinkedInIcon from "../../images/icons/linkedInIcon.svg";
+import GithubIcon from "../../images/icons/githubIcon.png";
+import InstagramIcon from "../../images/icons/instagramIcon.png";
+import MailIcon from "../../images/icons/emailIcon.png";
+import LinkedInIcon from "../../images/icons/linkedInIcon.png";
+
 
 const IntroductionSection: React.FC<{}> = () => {
   
@@ -34,9 +34,9 @@ const IntroductionSection: React.FC<{}> = () => {
             
             <IconContainer>
               <Icon><img src={GithubIcon} height="80px" alt="Image"/></Icon>
+              <Icon><img src={InstagramIcon} height="80px" alt="Image"/></Icon>
               <Icon><img src={LinkedInIcon} height="80px" alt="Image"/></Icon>
               <Icon><img src={MailIcon} height="80px" alt="Image"/></Icon>
-              <Icon><img src={InstagramIcon} height="80px" alt="Image"/></Icon>
             </IconContainer> 
             
             {/* <ProgressBar label={"Years Of Experience: 2+"} progressValue={20}/>        

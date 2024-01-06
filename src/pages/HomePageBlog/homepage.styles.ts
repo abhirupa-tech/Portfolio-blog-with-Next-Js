@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImg from "../../images/HomePagebackground.png";
+import backgroundImg from "../../images/HomePageBackground.png";
 import { Col, Row } from "react-grid-system";
 
 export const DeveloperIntro = styled(Col)`
