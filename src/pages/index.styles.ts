@@ -33,6 +33,6 @@ export const GlobalStyle = createGlobalStyle`
     src: url(${MontserratBlack}) format('truetype');
   }
   body {
-    background-color: black;
+    background-color: none;
     margin: 0px;
   }`;

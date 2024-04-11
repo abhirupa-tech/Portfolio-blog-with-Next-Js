@@ -1,5 +1,6 @@
 import * as React from "react"
-import {Image, Root, MaterialButton, MentorshipContainer, MentorshipImage, MentorshipHeader, MentorshipAbout} from "./MentorshipSection.styles";
+import {Image, Root, MentorshipContainer, MentorshipImage, MentorshipHeader, MentorshipAbout} from "./MentorshipSection.styles";
+import { MaterialButton } from "../HomePageBlog/homepage.styles";
 import { Col, Row } from "react-grid-system";
 import MentorshipImg from "./../../images/mentorshipImage.svg";
 

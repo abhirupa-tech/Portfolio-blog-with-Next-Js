@@ -20,7 +20,6 @@ const BlogCard: React.FC<BlogData> = ({
         <BlogCardImage/>
         <CardContent>
           <BlogCardHeader> {title} </BlogCardHeader>
-          <BlogCardTag> {tags[0]}</BlogCardTag>
           <BlogCardContent>{content}</BlogCardContent>
           <CardAction> Continue Reading  </CardAction>         
         </CardContent>
