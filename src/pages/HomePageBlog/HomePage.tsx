@@ -50,7 +50,7 @@ const IntroductionSection: React.FC<{}> = () => {
           </DeveloperIntro>
         </Grid>
         <Grid xs={12} md={4}>
-          <img src={ProfilePicture} height="500px" alt="Image" />
+          {/* <img src={ProfilePicture} height="500px" alt="Image" /> */}
         </Grid>
       </Grid>
 

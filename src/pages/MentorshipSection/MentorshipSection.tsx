@@ -25,7 +25,7 @@ const MentorshipSection: React.FC<{}> = () => {
                     </MaterialButton>
                 </Col>
                 <Col sm={4}>
-                    <Image src={MentorshipImg} height="400px" alt="Mentorhip Image"/>
+                    {/* <Image src={MentorshipImg} height="400px" alt="Mentorhip Image"/> */}
                 </Col>
             </Row>
         </MentorshipContainer>

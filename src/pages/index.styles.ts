@@ -36,3 +36,17 @@ export const GlobalStyle = createGlobalStyle`
     background-color: none;
     margin: 0px;
   }`;
+
+// Define breakpoints for different screen sizes
+export const sizes = {
+  desktop: '1024px',
+  tablet: '550px',
+  phone: '576px',
+};
+
+// Create media templates
+export const media = {
+  desktop: `@media (min-width: ${sizes.desktop})`,
+  tablet: `@media (min-width: ${sizes.tablet}) and (max-width: ${sizes.desktop})`,
+  phone: `@media (max-width: ${sizes.phone})`,
+};

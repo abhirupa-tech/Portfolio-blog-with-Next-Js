@@ -2,13 +2,12 @@ import styled from "styled-components";
 import backgroundImg from "../../images/HomePageBackground.png";
 import { Col, Row } from "react-grid-system";
 import { Grid } from "@mui/material";
-
+import { media } from "../index.styles";
+  
 export const DeveloperIntro = styled(Col)`
     margin: auto!important;
     width: 30vw;
     padding:0px!important;
-    margin-left: 5vw!important;    
-    margin-right: 5vw!important;
     padding:0px!important;    
     margin-top: 10vh;
     display: flex;
@@ -30,6 +29,14 @@ export const DeveloperName = styled.div`
     text-align: center;
     width: 100%;
     margin-top: 60px;
+
+    ${media.tablet} {
+      font-size: 5em;
+    }
+
+    ${media.phone} {
+      font-size: 4em;
+    }
 `;
 
 export const DeveloperAbout = styled.div`
@@ -41,6 +48,16 @@ export const DeveloperAbout = styled.div`
     letter-spacing: 1.2px;
     display: inline-block;
     text-align: center;
+
+    ${media.tablet} {
+        font-size: 1em;
+        width: 60vw;
+    }
+
+    ${media.phone} {
+        font-size: 0.8em;
+        width: 80vw;
+    }
 `;
 
 export const ProfilePic = styled.image`
