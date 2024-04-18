@@ -41,10 +41,10 @@ const IntroductionSection: React.FC<{}> = () => {
             </DeveloperAbout>
             
             <IconContainer>
-              <Icon><img src={GithubIcon} height="80px" alt="Image"/></Icon>
-              <Icon><img src={InstagramIcon} height="80px" alt="Image"/></Icon>
-              <Icon><img src={LinkedInIcon} height="80px" alt="Image"/></Icon>
-              <Icon><img src={MailIcon} height="80px" alt="Image"/></Icon>
+              <Icon><img src={GithubIcon} alt="Image"/></Icon>
+              <Icon><img src={InstagramIcon} alt="Image"/></Icon>
+              <Icon><img src={LinkedInIcon} alt="Image"/></Icon>
+              <Icon><img src={MailIcon} alt="Image"/></Icon>
             </IconContainer> 
             <MaterialButton>Let me Mentor You</MaterialButton>
           </DeveloperIntro>

@@ -50,7 +50,7 @@ export const DeveloperAbout = styled.div`
     text-align: center;
 
     ${media.tablet} {
-        font-size: 1em;
+        font-size: 1.2em;
         width: 60vw;
     }
 
@@ -79,6 +79,20 @@ export const Icon = styled.image`
         filter: brightness(150%);
         transition: all 0.2s ease-in-out;
     }
+    img {
+        ${media.tablet} {
+            height: 8vw;
+            width: auto;
+        }
+        ${media.phone} {
+            height: 14vw;
+            width: auto;
+        }
+        ${media.desktop} {
+            height: 4vw;
+            width: auto;
+        }
+    }    
 `;
 
 export const IconContainer = styled.image`
@@ -100,7 +114,7 @@ export const MaterialButton = styled.div`
     padding: 10px 20px;
     width: fit-content;    
     font-family: 'MontserratStandardLight';
-    font-size: 2.5vh;
+    font-size: 1.5em;
     font-weight: 600;
     display: inline-block;
     &:hover {
@@ -109,6 +123,14 @@ export const MaterialButton = styled.div`
         cursor: pointer;
         shadow: 2px;
         transition: all 0.2s ease-in-out;
+    }
+    ${media.tablet} {
+        font-size: 1em;
+        font-style: regular;
+    }
+    ${media.phone} {
+        font-size: 0.7em;
+        font-style: regular;
     }
 `;
 
