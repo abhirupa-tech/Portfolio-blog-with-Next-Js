@@ -3,19 +3,20 @@ import { Button, Container } from "@mui/material";
 import { media } from "../index.styles";
 
 export const Root = styled.div`
-    height: 85vh;
-    background-color: #efefef;
-`;
-
-export const MentorshipContainer = styled.div`
     margin: auto;
-    width: 75%;    
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;   
     ${media.tablet} {
         text-align: center;
     }
     ${media.phone} {
         text-align: center;
-        width: 85%; 
+        width: 100%;        
+        margin: 5vh 0vh;
     }
 `;
 
@@ -42,6 +43,7 @@ export const MentorshipHeader = styled.div`
         font-size: 2em;        
         letter-spacing: -2px;
         line-height: 5vh;
+        padding: 0vw 10vw;   
     }
 `;
 
@@ -58,8 +60,10 @@ export const MentorshipAbout = styled.div`
     }
     ${media.phone} {
         font-size: 1em;
-        line-height: 3.5vh;
+        line-height: 3vh;
         text-align: center;
+        padding: 2vw 12vw;        
+        margin-top: 0vh;
     }
 `;
 
@@ -71,19 +75,25 @@ export const MaterialButton = styled.div`
     background: linear-gradient(#f33c6d, #a30d2c);
     border-radius: 20px;
     padding: 10px 20px;
+    width: fit-content;    
     font-family: 'MontserratStandardLight';
-    font-size: 2.5vh;
+    font-size: 1.5em;
     font-weight: 600;
-    width: fit-content;
     display: inline-block;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    letter-spacing:1px;
     &:hover {
-        background: linear-gradient(#b10a37,#9f0625);
+        background: linear-gradient(#eb5e84,#bf3030); !important;
         color: whitesmoke;
         cursor: pointer;
         shadow: 2px;
-        transition: all 0.8s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    ${media.tablet} {
+        font-size: 1em;
+        font-style: regular;
+    }
+    ${media.phone} {
+        font-size: 0.7em;
+        font-style: regular;
     }
 `;
 

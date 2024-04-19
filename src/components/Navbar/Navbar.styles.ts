@@ -5,6 +5,18 @@ import { media } from "../../pages/index.styles";
 
 export const Root = styled.div`   
     height: fit-content;
+    text-align: center;
+    padding: 2vh 0vw;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    color: white;
+    ${media.tablet} {
+        font-size: 1em;
+    }    
+    ${media.phone} {
+        padding: 3vh 0vw;
+        font-size: 1em;
+    }
 `;
 
 export const Navbar = styled.div` 

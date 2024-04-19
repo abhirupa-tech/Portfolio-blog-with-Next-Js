@@ -5,7 +5,7 @@ const BlogCard: React.FC<{}> = () => {
 
   return (
     <Root>
-      <Navbar>@thetravellingprogrammer</Navbar>
+      @thetravellingprogrammer
     </Root>
   )
 }

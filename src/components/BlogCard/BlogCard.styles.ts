@@ -26,7 +26,7 @@ export const Blog = styled.div`
         margin-right: 10vw;
         margin-top: 0vw;
         margin-bottom: 2vw;
-        height: 30vh;
+        height: fit-content;
     }
 `;
 
@@ -38,6 +38,14 @@ export const BlogCardHeader = styled.div`
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    ${media.tablet} {
+        margin: 10px;
+        height: 40vh;
+    }
+    ${media.phone} {
+        font-size: 1.5em;
+        line-height: 3vh;
+    }
 `;
 
 export const BlogCardContent = styled.div`
@@ -52,6 +60,16 @@ export const BlogCardContent = styled.div`
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    
+    ${media.tablet} {
+        margin: 10px;
+        height: 40vh;
+    }
+    ${media.phone} {
+        margin-top: 1vh;
+        font-size: 1em;
+        line-height: 3vh;
+    }
 `;
 
 export const BlogCardImage = styled.div`
@@ -83,4 +101,7 @@ export const CardContent = styled.div`
 export const CardAction = styled(Button)`
     padding: 0px!important;
     margin-top: 1vh!important;
+    ${media.phone} {
+        margin-bottom: 3vh;
+    }
 `;
