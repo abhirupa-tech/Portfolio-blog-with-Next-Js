@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
 
 // Define breakpoints for different screen sizes
 export const sizes = {
-  desktop: '1024px',
+  desktop: '1030px',
   tablet: '550px',
   phone: '576px',
 };

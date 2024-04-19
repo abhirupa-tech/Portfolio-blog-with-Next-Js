@@ -55,7 +55,9 @@ export const DeveloperAbout = styled.div`
     }
 
     ${media.phone} {
-        font-size: 0.8em;
+        font-size: 1.1em;
+        line-height: 2.8vh;
+        font-weight: 400;
         width: 80vw;
     }
 `;
@@ -158,7 +160,13 @@ export const BlogContainer = styled.div`
     margin: 0 auto;
     margin-top: 10vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    ${media.tablet} {
+        width: 90vw;
+    }
+    ${media.phone} {
+        width: 100vw;
+    }
 `;
 
 export const CustomRow = styled.div`

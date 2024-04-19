@@ -2,6 +2,7 @@ import { StyleRounded } from "@mui/icons-material";
 import styled from "styled-components";
 import BlogImage from "../../images/blog3img.jpg";
 import { Button } from "@mui/material";
+import { media } from "../../pages/index.styles";
 
 export const Root = styled.div`   
     flex-basis: 33.33%;
@@ -10,12 +11,23 @@ export const Root = styled.div`
 export const Blog = styled.div`
    margin: 30px;   
    border-radius: 20px;
-   height: 60vh;  
+   height: 60vh;
    position: relative; 
    background-color: white;
    box-shadow: 10px 10px 15px 0px #00000040;
    display: flex;
    flex-direction: column;
+   ${media.tablet} {
+        margin: 10px;
+        height: 40vh;
+    }
+    ${media.phone} {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 0vw;
+        margin-bottom: 2vw;
+        height: 30vh;
+    }
 `;
 
 export const BlogCardHeader = styled.div`
@@ -45,6 +57,8 @@ export const BlogCardContent = styled.div`
 export const BlogCardImage = styled.div`
     border-radius: 18px 18px 0px 0px;
     height: 30vh;
+    order: -1;
+      display: block;
     background-image: url(${BlogImage});
     background-position: center;
     background-repeat: no-repeat;

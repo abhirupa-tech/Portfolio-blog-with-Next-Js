@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button, Container } from "@mui/material";
+import { media } from "../index.styles";
 
 export const Root = styled.div`
     height: 85vh;
@@ -9,29 +10,39 @@ export const Root = styled.div`
 export const MentorshipContainer = styled.div`
     margin: auto;
     width: 75%;    
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    ${media.tablet} {
+        text-align: center;
+    }
+    ${media.phone} {
+        text-align: center;
+        width: 85%; 
+    }
 `;
 
 export const MentorshipImage = styled(Container)`
     height: 65vh;
- n
 `;
 
 export const MentorshipHeader = styled.div`
-     margin-top: 10vh;
+    margin-top: 10vh;
     background: linear-gradient(272deg,#3619f2 12.22%,#6b32ae 52.69%,#450185 98.47%);
     /* background-clip: text; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    leading-trim: both;
-    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
     font-family: 'MontserratHeaderBold';
     font-size: 8vh;
-    font-weight: bolder;
     line-height: 9vh;
     letter-spacing: -3px;
+    ${media.tablet} {
+        font-size: 4em;
+        line-height: 6vh;
+    }
+    ${media.phone} {
+        font-size: 2em;        
+        letter-spacing: -2px;
+        line-height: 5vh;
+    }
 `;
 
 export const MentorshipAbout = styled.div`
@@ -41,6 +52,15 @@ export const MentorshipAbout = styled.div`
     font-size: 2.5vh;
     font-weight: 600;
     letter-spacing: 1.2px;
+    ${media.tablet} {
+        font-size: 2em;
+        line-height: 4vh;
+    }
+    ${media.phone} {
+        font-size: 1em;
+        line-height: 3.5vh;
+        text-align: center;
+    }
 `;
 
 export const MaterialButton = styled.div`

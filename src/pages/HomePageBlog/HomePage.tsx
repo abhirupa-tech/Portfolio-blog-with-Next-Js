@@ -55,10 +55,19 @@ const IntroductionSection: React.FC<{}> = () => {
       </Grid>
 
       {/* Blog Section */}
+      
       <BlogContainer>
-          <BlogCard {...blogItems[0]} />          
-          <BlogCard {...blogItems[1]} />          
-          <BlogCard {...blogItems[2]} />
+        <Grid container spacing={2}>
+          <Grid xs={12} md={4}>          
+            <BlogCard {...blogItems[0]} /> 
+          </Grid>
+          <Grid xs={12} md={4}>
+            <BlogCard {...blogItems[1]} />  
+          </Grid>
+          <Grid xs={12} md={4}>
+            <BlogCard {...blogItems[2]} />
+          </Grid>
+        </Grid>
       </BlogContainer>
 
       {/* Redirect User to your Medium Website Page       */}
