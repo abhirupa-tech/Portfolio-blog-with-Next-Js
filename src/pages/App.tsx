@@ -2,15 +2,19 @@ import IntroductionSection from "./HomePageBlog/HomePage";
 import { Body, GlobalStyle } from "./index.styles";
 import MentorshipSection from "./MentorshipSection/MentorshipSection";
 import FooterSection from "./FooterSection/FooterSection";
+import { ThemeProvider } from "@mui/material";
+import { theme } from "../utils";
 
 function App() {
   return (
-    <>
-      <GlobalStyle />
-      <IntroductionSection />
-      <MentorshipSection />
-      <FooterSection />
-    </>
+    <ThemeProvider theme={theme}>  
+      <Body>
+          <GlobalStyle />
+          <IntroductionSection />
+          <MentorshipSection />
+          <FooterSection />
+        </Body>
+    </ThemeProvider>
     
   );
 }

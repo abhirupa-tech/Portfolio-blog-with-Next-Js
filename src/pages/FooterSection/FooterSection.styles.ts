@@ -4,8 +4,7 @@ import { media } from "../index.styles";
 export const Root = styled.div`   
     background: linear-gradient(92deg, #546e7a, 2.51%, #153949  98.2%);
     margin: auto;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding: 10vh 5vw;
     ${media.tablet} {
         padding: 2vw 5vw;
     }${media.phone} {
@@ -51,11 +50,4 @@ export const FooterSubtext = styled.div`
         line-height: 2vh;
     }
 
-`;
-
-export const Footer = styled.div`
-    width: 80%;
-    margin: auto;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
 `;

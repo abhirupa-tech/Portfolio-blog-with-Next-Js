@@ -1,5 +1,6 @@
 import * as React from "react"
-import {BlogCardContent, CardContent, BlogCardHeader, BlogCardImage, Blog, Root, BlogCardTag, CardAction} from "./BlogCard.styles";
+import {BlogCardContent, BlogCardHeader, BlogCardImage, Blog, Root, BlogCardTag, CardAction, BlogTextArea} from "./BlogCard.styles";
+import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 
 
 export interface BlogData {
@@ -16,13 +17,24 @@ const BlogCard: React.FC<BlogData> = ({
 
   return (
     <Root >
-      <Blog>
+      {/* <Blog>
         <BlogCardImage/>
         <CardContent>
           <BlogCardHeader> {title} </BlogCardHeader>
           <BlogCardContent>{content}</BlogCardContent>
           <CardAction> Continue Reading  </CardAction>         
         </CardContent>
+      </Blog> */}
+      <Blog>
+        <CardActionArea>
+          <BlogCardImage
+          />
+          <BlogTextArea>
+            <BlogCardHeader> {title} </BlogCardHeader>
+            <BlogCardContent> {content} </BlogCardContent>
+            <CardAction> Continue Reading  </CardAction> 
+          </BlogTextArea>
+        </CardActionArea>
       </Blog>
     </Root>
   )

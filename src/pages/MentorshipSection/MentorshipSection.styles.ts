@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import { media } from "../index.styles";
 
 export const Root = styled.div`
@@ -9,7 +9,10 @@ export const Root = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;   
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+      
     ${media.tablet} {
         text-align: center;
     }
@@ -26,8 +29,7 @@ export const MentorshipImage = styled(Container)`
 
 export const MentorshipHeader = styled.div`
     margin-top: 10vh;
-    background: linear-gradient(272deg,#3619f2 12.22%,#6b32ae 52.69%,#450185 98.47%);
-    /* background-clip: text; */
+    background: linear-gradient(272deg, #0b6195 12.22%, #0b6195 52.69%, #213b49 98.47%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 2px 2px rgba(0,0,0,0.25);

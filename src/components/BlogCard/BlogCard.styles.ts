@@ -1,17 +1,16 @@
 import { StyleRounded } from "@mui/icons-material";
 import styled from "styled-components";
 import BlogImage from "../../images/blog3img.jpg";
-import { Button } from "@mui/material";
+import { Button, Card, CardContent, CardMedia } from "@mui/material";
 import { media } from "../../pages/index.styles";
 
 export const Root = styled.div`   
-    flex-basis: 33.33%;
+    margin: 0px 20px;
 `;
 
-export const Blog = styled.div`
-   margin: 30px;   
-   border-radius: 20px;
-   height: 60vh;
+export const Blog = styled(Card)`  
+   border-radius: 20px !important;
+   height: 70vh;
    position: relative; 
    background-color: white;
    box-shadow: 10px 10px 15px 0px #00000040;
@@ -48,6 +47,12 @@ export const BlogCardHeader = styled.div`
     }
 `;
 
+export const BlogTextArea = styled(CardContent)`
+    padding:20px !important;
+`;
+
+
+
 export const BlogCardContent = styled.div`
     margin-top: 2vh;
     font-family: 'MontserratStandardLight';
@@ -72,7 +77,7 @@ export const BlogCardContent = styled.div`
     }
 `;
 
-export const BlogCardImage = styled.div`
+export const BlogCardImage = styled(CardMedia)`
     border-radius: 18px 18px 0px 0px;
     height: 30vh;
     order: -1;
@@ -80,7 +85,26 @@ export const BlogCardImage = styled.div`
     background-image: url(${BlogImage});
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
+    component="img"
+    height="140"
+    image={require("./../../images/blog1img.jpg")}
+    alt="Static Image"
+`;
+
+export const MobileBlogCardImage = styled(CardMedia)`
+    border-radius: 18px 18px 0px 0px;
+    height: 30vh;
+    order: -1;
+    display: block;
+    background-image: url(${BlogImage});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    component="img"
+    height="140"
+    image={require("./../../images/blog1img.jpg")}
+    alt="Static Image"
 `;
 
 export const BlogCardTag = styled.div`
@@ -91,11 +115,6 @@ export const BlogCardTag = styled.div`
     border-radius: 5px;
     padding: 3px 12px 3px 12px;
     height: 20px;
-`;
-
-export const CardContent = styled.div`
-    margin: 4vh;
-    flex-grow:1;
 `;
 
 export const CardAction = styled(Button)`

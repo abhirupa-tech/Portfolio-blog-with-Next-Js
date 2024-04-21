@@ -5,10 +5,16 @@ import MontserratStandardLight from "../fonts/Montserrat-ExtraLight.ttf";
 import MontserratHeaderBold from "../fonts/Montserrat-Bold.ttf";
 import MontserratBlack from "../fonts/Montserrat-Black.ttf";
 import { createGlobalStyle } from 'styled-components'
+import backgroundImg from "../images/HomePageBackground.png";
 
 export const Body = styled.div`
     /* background-image : yellow; */
-    // width: 70%;
+    width: 100vw;
+    background-image: 
+    url(${backgroundImg});
+    padding: 0;
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents repetition of the image */
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -31,10 +37,6 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'MontserratBlack';
     src: url(${MontserratBlack}) format('truetype');
-  }
-  body {
-    background-color: none;
-    margin: 0px;
   }`;
 
 // Define breakpoints for different screen sizes
