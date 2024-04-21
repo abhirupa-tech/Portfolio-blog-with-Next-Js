@@ -1,5 +1,5 @@
 import * as React from "react"
-import {DeveloperName, BlogContainer, Root, DeveloperAbout, Icon, MaterialButton, IconContainer, IntroductionColumn, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShot} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, Icon, MaterialButton, IconContainer, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
@@ -10,11 +10,8 @@ import InstagramIcon from "../../images/icons/instagramIcon.png";
 import MailIcon from "../../images/icons/emailIcon.png";
 import LinkedInIcon from "../../images/icons/linkedInIcon.png";
 import Grid from '@mui/material/Unstable_Grid2';
-import Paper from '@mui/material/Paper';
-import { styled, useTheme } from '@mui/material/styles';
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import { Box, useMediaQuery } from "@mui/material";
-import { media } from "../index.styles";
+import { useTheme } from '@mui/material/styles';
+import { useMediaQuery } from "@mui/material";
 
 const IntroductionSection: React.FC<{}> = () => {
   
@@ -28,11 +25,12 @@ const IntroductionSection: React.FC<{}> = () => {
       <Navbar/>
 
       {/* Introduction Section */}
-      <Grid container>
-        {isMobile && <ProfileHeadShot xs={12} md={5}>
+      <Grid container sx={{...homePageGridStyles(theme)}}>
+        {isMobile && <ProfileHeadShotMobile xs={12} md={5}>
           <StyledImage src={ProfilePicture} alt="Profile Picture" />
-        </ProfileHeadShot> }
-        <Grid xs={12} md={7}>
+        </ProfileHeadShotMobile> }
+        <Grid xs={0} md={1}/>
+        <Grid xs={12} md={6}>
           <DeveloperIntro>            
             <DeveloperName> Abhirupa </DeveloperName>            
             <DeveloperAbout>
@@ -50,9 +48,9 @@ const IntroductionSection: React.FC<{}> = () => {
           </DeveloperIntro>
         </Grid>
                 
-        {!isMobile && <ProfileHeadShot xs={12} md={5}>
+        {!isMobile && <ProfileHeadShotDefault xs={12} md={5}>
           <StyledImage src={ProfilePicture} alt="Profile Picture" />
-        </ProfileHeadShot> }
+        </ProfileHeadShotDefault> }
       </Grid>
 
       {/* Blog Section */}
