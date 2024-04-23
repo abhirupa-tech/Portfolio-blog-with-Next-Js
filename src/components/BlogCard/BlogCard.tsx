@@ -1,7 +1,9 @@
 import * as React from "react"
 import {BlogCardContent, BlogCardHeader, BlogCardImage, Blog, Root, BlogCardTag, CardAction, BlogTextArea} from "./BlogCard.styles";
 import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import { useTheme, useMediaQuery } from '@mui/material/';
 
+import Box from '@mui/material/Box';
 
 export interface BlogData {
   title : string,
@@ -15,17 +17,12 @@ const BlogCard: React.FC<BlogData> = ({
   title, content, date, tags, imageUrl,
 }) => {
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Root >
-      {/* <Blog>
-        <BlogCardImage/>
-        <CardContent>
-          <BlogCardHeader> {title} </BlogCardHeader>
-          <BlogCardContent>{content}</BlogCardContent>
-          <CardAction> Continue Reading  </CardAction>         
-        </CardContent>
-      </Blog> */}
-      <Blog>
+      {!isMobile && <Blog>
         <CardActionArea>
           <BlogCardImage
           />
@@ -35,9 +32,27 @@ const BlogCard: React.FC<BlogData> = ({
             <CardAction> Continue Reading  </CardAction> 
           </BlogTextArea>
         </CardActionArea>
-      </Blog>
+      </Blog>}
+
+      { isMobile && <Card sx={{ display: 'flex', maxWidth: 600 }}>
+        <CardMedia
+          component="img"
+          image={require("./../../images/blog1img.jpg")}
+          alt="Blog image"
+          sx={{ width: '50%'}}
+        />
+        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+          <CardContent>
+            <BlogCardHeader> {title} </BlogCardHeader>
+            <BlogCardContent> {content} </BlogCardContent>
+            <CardAction> Continue Reading  </CardAction> 
+          </CardContent>
+        </Box>
+      </Card>}
+
     </Root>
   )
-  }
+}
+
 
 export default BlogCard;

@@ -15,7 +15,6 @@ import { useMediaQuery } from "@mui/material";
 
 const IntroductionSection: React.FC<{}> = () => {
   
-  // Inside your component:
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 

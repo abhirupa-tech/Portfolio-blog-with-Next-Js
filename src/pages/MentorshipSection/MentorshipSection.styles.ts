@@ -44,7 +44,7 @@ export const MentorshipHeader = styled.div`
     ${media.phone} {
         font-size: 2em;        
         letter-spacing: -2px;
-        line-height: 5vh;
+        line-height: 6vh;
         padding: 0vw 10vw;   
     }
 `;
@@ -61,7 +61,7 @@ export const MentorshipAbout = styled.div`
         line-height: 4vh;
     }
     ${media.phone} {
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 3vh;
         text-align: center;
         padding: 2vw 12vw;        

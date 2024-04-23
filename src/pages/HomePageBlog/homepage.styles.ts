@@ -177,16 +177,23 @@ export const IntroductionColumn = styled(Col)({
   padding: '0px!important',
 });
 
-export const BlogContainer = styled('div')({
+export const BlogContainer = styled('div')(({ theme }) => ({
   backgroundColor: 'transparent',
   padding: 0,
   width: '70%',
   margin: '0 auto',
   marginTop: '10vh',
   display: 'flex',
-  flexWrap: 'wrap',
+  flexWrap: 'wrap',  
+  [theme.breakpoints.down('md')]: {
+    // width: '90vw',
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '95vw',
+    fontWeight: '400',
+  },
   // You will need to adjust the media queries according to your theme breakpoints
-});
+}));
 
 export const CustomRow = styled('div')({
   display: 'flex',

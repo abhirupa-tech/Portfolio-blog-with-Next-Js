@@ -6,6 +6,10 @@ import { media } from "../../pages/index.styles";
 
 export const Root = styled.div`   
     margin: 0px 20px;
+    
+    ${media.phone} {
+        margin-top: 30px;
+    }
 `;
 
 export const Blog = styled(Card)`  
@@ -21,8 +25,6 @@ export const Blog = styled(Card)`
         height: 40vh;
     }
     ${media.phone} {
-        margin-left: 10vw;
-        margin-right: 10vw;
         margin-top: 0vw;
         margin-bottom: 2vw;
         height: fit-content;
@@ -42,8 +44,9 @@ export const BlogCardHeader = styled.div`
         height: 40vh;
     }
     ${media.phone} {
-        font-size: 1.5em;
-        line-height: 3vh;
+        font-size: 1.1em;
+        line-height: 3vh;        
+        -webkit-line-clamp: 3;
     }
 `;
 
@@ -72,27 +75,12 @@ export const BlogCardContent = styled.div`
     }
     ${media.phone} {
         margin-top: 1vh;
-        font-size: 1em;
+        font-size: 0.8em;
         line-height: 3vh;
     }
 `;
 
 export const BlogCardImage = styled(CardMedia)`
-    border-radius: 18px 18px 0px 0px;
-    height: 30vh;
-    order: -1;
-      display: block;
-    background-image: url(${BlogImage});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    component="img"
-    height="140"
-    image={require("./../../images/blog1img.jpg")}
-    alt="Static Image"
-`;
-
-export const MobileBlogCardImage = styled(CardMedia)`
     border-radius: 18px 18px 0px 0px;
     height: 30vh;
     order: -1;
@@ -105,6 +93,11 @@ export const MobileBlogCardImage = styled(CardMedia)`
     height="140"
     image={require("./../../images/blog1img.jpg")}
     alt="Static Image"
+`;
+
+export const MobileBlogCardImage = styled(CardMedia)`    
+    component="img"
+    alt="Blog image"
 `;
 
 export const BlogCardTag = styled.div`
@@ -121,6 +114,7 @@ export const CardAction = styled(Button)`
     padding: 0px!important;
     margin-top: 1vh!important;
     ${media.phone} {
-        margin-bottom: 3vh;
+        margin-bottom: 2px !important;
+        font-size: 0.6em !important;
     }
 `;
