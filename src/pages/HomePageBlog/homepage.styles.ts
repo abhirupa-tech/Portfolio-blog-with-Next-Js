@@ -9,7 +9,14 @@ export const DeveloperIntro = styled('div')(({ theme }) => ({
   flexDirection: 'column',
   justifyContent: 'center',
   textAlign: 'center',
-  alignItems: 'center',
+  alignItems: 'center',   
+  [theme.breakpoints.down('md')]: {
+    // fontSize: '1.2em',
+    // width: '60vw',
+  },
+  [theme.breakpoints.down('sm')]: {
+    height: 'fit-content',
+  },
 }));
 
 export const homePageGridStyles = (theme: Theme) => ({
@@ -41,9 +48,9 @@ export const DeveloperName = styled('div')(({ theme }) => ({
     fontSize: '5em',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '4em',
-    marginTop: '0px',
-    letterSpacing: '-2px',
+    fontSize: '3em',
+    marginTop: '0vh',
+    letterSpacing: '0px',
     height: 'fit-content'
   },
 }));
@@ -62,10 +69,10 @@ export const DeveloperAbout = styled('div')(({ theme }) => ({
     width: '60vw',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '1em',
+    fontSize: '0.85em',
     lineHeight: '2.8vh',
     fontWeight: 400,
-    width: '80vw',
+    width: '70vw',
   },
 }));
 
@@ -107,7 +114,8 @@ export const Icon = styled('img')(({ theme }) => ({
       // width: '60vw',
   },
   [theme.breakpoints.down('sm')]: {
-    height: '15vw',
+    padding: '0px 8px',
+    height: '10vw',
   },
   
 }));
@@ -121,12 +129,12 @@ export const IconContainer = styled('div')({
   alignItems: 'center',
 });
 
-export const MaterialButton = styled('div')({
+export const MaterialButton = styled('div')(({ theme }) => ({
   textAlign: 'center',
   alignContent: 'center',
   color: 'ghostwhite',
   marginTop: '6vh',
-  background: 'linear-gradient(#f33c6d, #a30d2c)',
+  background: 'linear-gradient(#243d55, #232f35)',
   borderRadius: '20px',
   padding: '10px 20px',
   width: 'fit-content',
@@ -135,23 +143,32 @@ export const MaterialButton = styled('div')({
   fontWeight: 600,
   display: 'inline-block',
   '&:hover': {
-    background: 'linear-gradient(#eb5e84,#bf3030)',
+    background: 'charcoal',
     color: 'whitesmoke',
     cursor: 'pointer',
     shadow: '2px',
     transition: 'all 0.2s ease-in-out',
   },
+  
+  [theme.breakpoints.down('md')]: {
+      // fontSize: '1.2em',
+      // width: '60vw',
+  },
+  [theme.breakpoints.down('sm')]: {    
+    fontSize: '1em',
+  },
   // You will need to adjust the media queries according to your theme breakpoints
-});
+}));
 
 export const StyledImage = styled('img')(({ theme }) => ({
   maxWidth: '30vw',
   height: 'auto',
-  [theme.breakpoints.down('sm')]: {
-    maxWidth: '80vw',
+  [theme.breakpoints.down('md')]: {
+    maxWidth: '20vw',
   },
-  [theme.breakpoints.up('md')]: {
-    // Add styles for md breakpoint
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: '60vw',
+    fontWeight: '400',
   },
 }));
 
