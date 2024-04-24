@@ -1,5 +1,5 @@
 import * as React from "react"
-import {BlogCardContent, BlogCardHeader, BlogCardImage, Blog, Root, BlogCardTag, CardAction, BlogTextArea} from "./BlogCard.styles";
+import {BlogCardContent, BlogCardHeader, BlogCardImage, Blog, Root, BlogCardTag, CardAction, BlogTextArea, BlogMobile} from "./BlogCard.styles";
 import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { useTheme, useMediaQuery } from '@mui/material/';
 
@@ -24,8 +24,7 @@ const BlogCard: React.FC<BlogData> = ({
     <Root >
       {!isMobile && <Blog>
         <CardActionArea>
-          <BlogCardImage
-          />
+          <BlogCardImage />
           <BlogTextArea>
             <BlogCardHeader> {title} </BlogCardHeader>
             <BlogCardContent> {content} </BlogCardContent>
@@ -34,7 +33,7 @@ const BlogCard: React.FC<BlogData> = ({
         </CardActionArea>
       </Blog>}
 
-      { isMobile && <Card sx={{ display: 'flex', maxWidth: 600 }}>
+      { isMobile && <BlogMobile sx={{ display: 'flex', maxWidth: 600 }}>
         <CardMedia
           component="img"
           image={require("./../../images/blog1img.jpg")}
@@ -48,7 +47,7 @@ const BlogCard: React.FC<BlogData> = ({
             <CardAction> Continue Reading  </CardAction> 
           </CardContent>
         </Box>
-      </Card>}
+      </BlogMobile>}
 
     </Root>
   )

@@ -28,7 +28,7 @@ const IntroductionSection: React.FC<{}> = () => {
         {isMobile && <ProfileHeadShotMobile xs={12} md={5}>
           <StyledImage src={ProfilePicture} alt="Profile Picture" />
         </ProfileHeadShotMobile> }
-        <Grid xs={0} md={1}/>
+        {!isMobile && <Grid xs={0} md={1}/>}
         <Grid xs={12} md={6}>
           <DeveloperIntro>            
             <DeveloperName> Abhirupa </DeveloperName>            

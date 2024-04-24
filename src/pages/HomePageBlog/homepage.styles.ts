@@ -28,7 +28,7 @@ export const homePageGridStyles = (theme: Theme) => ({
   },
   [theme.breakpoints.down('sm')]: {
     height: '90vh',
-    marginTop: '5vh',
+    marginTop: '10vh',
   },
 });
 
@@ -49,7 +49,7 @@ export const DeveloperName = styled('div')(({ theme }) => ({
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '3em',
-    marginTop: '0vh',
+    marginTop: '-14vh',
     letterSpacing: '0px',
     height: 'fit-content'
   },
@@ -191,6 +191,7 @@ export const BlogContainer = styled('div')(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     width: '95vw',
     fontWeight: '400',
+    marginTop: '0vh',
   },
   // You will need to adjust the media queries according to your theme breakpoints
 }));

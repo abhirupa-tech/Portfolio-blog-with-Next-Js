@@ -25,11 +25,11 @@ export const FooterText = styled.div`
         line-height: 6vh;
     }
     ${media.phone} {        
-        margin-top: 2vh;
-        font-size: 2em;        
+        margin-top: 2vh;        
+        font-size: 1.32em;      
         letter-spacing: 0px;
         line-height: 5vh;
-        padding: 0vw 5vw; 
+        padding: 0vw 4vw;
     }
 `;
 
@@ -43,11 +43,12 @@ export const FooterSubtext = styled.div`
         font-size: 2em;
         line-height: 4vh;
         padding-top: 5vw;
-    }
+    }    
     ${media.phone} {
-        font-size: 1em;
-        padding: 2vw 5vw;
-        line-height: 2vh;
+        padding: 2vw 4vw;
+        font-size: 0.9em;
+        line-height: 3vh;      
+        margin-top: 0vh;
     }
 
 `;

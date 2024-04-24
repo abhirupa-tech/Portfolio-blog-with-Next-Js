@@ -42,6 +42,7 @@ export const MentorshipHeader = styled.div`
         line-height: 6vh;
     }
     ${media.phone} {
+        margin-top: 2vh;
         font-size: 2em;        
         letter-spacing: -2px;
         line-height: 6vh;
