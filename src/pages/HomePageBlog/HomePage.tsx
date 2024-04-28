@@ -1,5 +1,5 @@
 import * as React from "react"
-import {DeveloperName, BlogContainer, Root, DeveloperAbout, Icon, MaterialButton, IconContainer, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, Icon, IconContainer, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
@@ -12,12 +12,14 @@ import LinkedInIcon from "../../images/icons/linkedInIcon.png";
 import Grid from '@mui/material/Unstable_Grid2';
 import { useTheme } from '@mui/material/styles';
 import { useMediaQuery } from "@mui/material";
+import { MaterialButton } from "../index.styles";
 
 const IntroductionSection: React.FC<{}> = () => {
   
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm')) 
+  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobileOrTablet = isMobile || isTablet
   return (
     <Root >
       {/* Navbar Section */}
@@ -25,10 +27,10 @@ const IntroductionSection: React.FC<{}> = () => {
 
       {/* Introduction Section */}
       <Grid container sx={{...homePageGridStyles(theme)}}>
-        {isMobile && <ProfileHeadShotMobile xs={12} md={5}>
+        {isMobileOrTablet && <ProfileHeadShotMobile xs={12} md={6} lg={5}>
           <StyledImage src={ProfilePicture} alt="Profile Picture" />
         </ProfileHeadShotMobile> }
-        {!isMobile && <Grid xs={0} md={1}/>}
+        {!isMobileOrTablet && <Grid xs={0} md={0} lg={1}/>}
         <Grid xs={12} md={6}>
           <DeveloperIntro>            
             <DeveloperName> Abhirupa </DeveloperName>            
@@ -47,7 +49,7 @@ const IntroductionSection: React.FC<{}> = () => {
           </DeveloperIntro>
         </Grid>
                 
-        {!isMobile && <ProfileHeadShotDefault xs={12} md={5}>
+        {!isMobileOrTablet && <ProfileHeadShotDefault xs={12} md={5}>
           <StyledImage src={ProfilePicture} alt="Profile Picture" />
         </ProfileHeadShotDefault> }
       </Grid>

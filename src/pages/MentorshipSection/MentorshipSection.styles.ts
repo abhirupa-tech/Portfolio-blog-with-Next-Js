@@ -1,107 +1,71 @@
-import styled from "styled-components";
-import { Container } from "@mui/material";
-import { media } from "../index.styles";
+import * as React from 'react';
+import { Container, Card } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
-export const Root = styled.div`
-    margin: auto;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-      
-    ${media.tablet} {
-        text-align: center;
-    }
-    ${media.phone} {
-        text-align: center;
-        width: 100%;        
-        margin: 5vh 0vh;
-    }
-`;
+// Define your styled components using MUI's styled utility
+export const Root = styled('div')(({ theme }) => ({
+  margin: 'auto',
+  width: '75%',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  textAlign: 'center',
+  alignItems: 'center',
+  marginTop: '10vh',
+  marginBottom: '10vh',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    textAlign: 'center',
+  },
+  [theme.breakpoints.down('sm')]: {
+    textAlign: 'center',
+    width: '100%',
+    margin: '5vh 0vh',
+  },
+}));
 
-export const MentorshipImage = styled(Container)`
-    height: 65vh;
-`;
+export const MentorshipImage = styled(Container)(({ theme }) => ({
+  height: '65vh',
+}));
 
-export const MentorshipHeader = styled.div`
-    margin-top: 10vh;
-    background: linear-gradient(272deg, #0b6195 12.22%, #0b6195 52.69%, #213b49 98.47%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
-    font-family: 'MontserratHeaderBold';
-    font-size: 8vh;
-    line-height: 9vh;
-    letter-spacing: -3px;
-    ${media.tablet} {
-        font-size: 4em;
-        line-height: 6vh;
-    }
-    ${media.phone} {
-        margin-top: 2vh;
-        font-size: 2em;        
-        letter-spacing: -2px;
-        line-height: 6vh;
-        padding: 0vw 10vw;   
-    }
-`;
+export const MentorshipHeader = styled('div')(({ theme }) => ({
+  marginTop: '10vh',
+  background: 'linear-gradient(272deg, #0b6195 12.22%, #0b6195 52.69%, #213b49 98.47%)',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+  textShadow: '0px 2px 2px rgba(0, 0, 0, 0.25)',
+  fontFamily: 'MontserratHeaderBold',
+  fontSize: '8vh',
+  lineHeight: '9vh',
+  letterSpacing: '-3px',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    fontSize: '4em',
+    lineHeight: '6vh',
+  },
+  [theme.breakpoints.down('sm')]: {
+    marginTop: '2vh',
+    fontSize: '2em',
+    letterSpacing: '-2px',
+    lineHeight: '5vh',
+    padding: '0vw 10vw',
+  },
+}));
 
-export const MentorshipAbout = styled.div`
-    color: #000;
-    margin-top: 2vh;
-    font-family: 'MontserratStandardLight';
-    font-size: 2.5vh;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    ${media.tablet} {
-        font-size: 2em;
-        line-height: 4vh;
-    }
-    ${media.phone} {
-        font-size: 0.9em;
-        line-height: 3vh;
-        text-align: center;
-        padding: 2vw 12vw;        
-        margin-top: 0vh;
-    }
-`;
-
-export const MaterialButton = styled.div`
-    text-align: center;
-    align-content: center;
-    color: ghostwhite;
-    margin-top: 6vh;
-    background: linear-gradient(#f33c6d, #a30d2c);
-    border-radius: 20px;
-    padding: 10px 20px;
-    width: fit-content;    
-    font-family: 'MontserratStandardLight';
-    font-size: 1.5em;
-    font-weight: 600;
-    display: inline-block;
-    &:hover {
-        background: linear-gradient(#eb5e84,#bf3030); !important;
-        color: whitesmoke;
-        cursor: pointer;
-        shadow: 2px;
-        transition: all 0.2s ease-in-out;
-    }
-    ${media.tablet} {
-        font-size: 1em;
-        font-style: regular;
-    }
-    ${media.phone} {
-        font-size: 0.7em;
-        font-style: regular;
-    }
-`;
-
-export const Image = styled.img`
-    height: 50vh;
-    display: flex;
-    align-items: center;
-`;
+export const MentorshipAbout = styled('div')(({ theme }) => ({
+  color: '#000',
+  marginTop: '2vh',
+  fontFamily: 'MontserratStandardLight',
+  fontSize: '2.5vh',
+  fontWeight: 600,
+  letterSpacing: '1.2px',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    fontSize: '2em',
+    lineHeight: '4vh',
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1.8vh',
+    lineHeight: '3vh',
+    textAlign: 'center',
+    padding: '2vw 12vw',
+    marginTop: '0vh',
+  },
+}));

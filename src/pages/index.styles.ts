@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import AbrilFatface from "../fonts/AbrilFatface-Regular.ttf";
 import Montserrat from "../fonts/MontserratAlternates-Light.ttf";
 import MontserratStandardLight from "../fonts/Montserrat-ExtraLight.ttf";
@@ -6,16 +5,15 @@ import MontserratHeaderBold from "../fonts/Montserrat-Bold.ttf";
 import MontserratBlack from "../fonts/Montserrat-Black.ttf";
 import { createGlobalStyle } from 'styled-components'
 import backgroundImg from "../images/HomePageBackground.png";
+import { styled } from '@mui/material/styles';
 
-export const Body = styled.div`
-    /* background-image : yellow; */
-    width: 100vw;
-    background-image: 
-    url(${backgroundImg});
-    padding: 0;
-    background-size: cover; /* This ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents repetition of the image */
-`;
+export const Body = styled('div')(({ theme }) => ({
+    maxWidth: '100vw',
+    backgroundImage: `url(${backgroundImg})`,
+    padding: '0',
+    backgroundSize: 'cover', /* This ensures the image covers the entire background */
+    backgroundRepeat: 'no-repeat', /* Prevents repetition of the image */
+}));
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -38,6 +36,39 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'MontserratBlack';
     src: url(${MontserratBlack}) format('truetype');
   }`;
+
+export const MaterialButton = styled('div')(({ theme }) => ({
+  textAlign: 'center',
+  alignContent: 'center',
+  color: 'ghostwhite',
+  marginTop: '6vh',
+  background: 'linear-gradient(#082d50, #031a26)',
+  borderRadius: '20px',
+  padding: '10px 20px',
+  width: 'fit-content',
+  fontFamily: 'MontserratStandardLight',
+  fontSize: '1.5em',
+  fontWeight: 600,
+  display: 'inline-block',
+  '&:hover': {
+    background: 'charcoal',
+    color: 'whitesmoke',
+    cursor: 'pointer',
+    shadow: '2px',
+    transition: 'all 0.2s ease-in-out',
+  },  
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    fontSize: '2.5vh',
+    fontWeight: 400,
+    marginTop: '8vh', 
+    borderRadius: '1.2em',   
+    padding: '1.5vh 4vh',
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '2vh',
+    fontWeight: 400,
+  },
+}));
 
 // Define breakpoints for different screen sizes
 export const sizes = {

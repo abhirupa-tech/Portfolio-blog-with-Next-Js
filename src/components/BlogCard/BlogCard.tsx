@@ -18,11 +18,13 @@ const BlogCard: React.FC<BlogData> = ({
 }) => {
 
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm')) 
+  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobileOrTablet = isMobile || isTablet;
 
   return (
     <Root >
-      {!isMobile && <Blog>
+      {!isMobileOrTablet && <Blog>
         <CardActionArea>
           <BlogCardImage />
           <BlogTextArea>
@@ -33,14 +35,14 @@ const BlogCard: React.FC<BlogData> = ({
         </CardActionArea>
       </Blog>}
 
-      { isMobile && <BlogMobile sx={{ display: 'flex', maxWidth: 600 }}>
+      { isMobileOrTablet && <BlogMobile sx={{ display: 'flex'}}>
         <CardMedia
           component="img"
           image={require("./../../images/blog1img.jpg")}
           alt="Blog image"
           sx={{ width: '50%'}}
         />
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column' ,justifyContent: "center" ,alignItems:"center"}}>
           <CardContent>
             <BlogCardHeader> {title} </BlogCardHeader>
             <BlogCardContent> {content} </BlogCardContent>

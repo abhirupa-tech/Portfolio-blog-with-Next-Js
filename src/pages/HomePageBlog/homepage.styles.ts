@@ -1,6 +1,7 @@
 import { styled } from '@mui/material/styles';
 import { CSSObject, Grid, Theme } from '@mui/material';
 import { Col } from 'react-grid-system';
+import { Height } from '@mui/icons-material';
 
 export const DeveloperIntro = styled('div')(({ theme }) => ({
   margin: 'auto!important',
@@ -22,9 +23,9 @@ export const DeveloperIntro = styled('div')(({ theme }) => ({
 export const homePageGridStyles = (theme: Theme) => ({
     height: '85vh', 
     marginTop:'15vh',    
-  [theme.breakpoints.down('md')]: {
-    // fontSize: '1.2em',
-    // width: '60vw',
+  [theme.breakpoints.down('md')]: {    
+    marginTop: '10vh',
+    height: 'fit-content',
   },
   [theme.breakpoints.down('sm')]: {
     height: '90vh',
@@ -44,8 +45,10 @@ export const DeveloperName = styled('div')(({ theme }) => ({
   width: '100%',
   marginTop: '60px',
   fontSize: '8em',
-  [theme.breakpoints.down('md')]: {
-    fontSize: '5em',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    fontSize: '7vh',
+    letterSpacing: '-0.1vh',
+    marginTop: '5vh',
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '3em',
@@ -64,15 +67,15 @@ export const DeveloperAbout = styled('div')(({ theme }) => ({
   letterSpacing: '1.2px',
   display: 'inline-block',
   textAlign: 'center',
-  [theme.breakpoints.down('md')]: {
-    fontSize: '1.2em',
-    width: '60vw',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm') ]: {
+    fontSize: '2.5vh',
+    width: '80vw',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '0.85em',
+    fontSize: '2vh',
     lineHeight: '2.8vh',
     fontWeight: 400,
-    width: '70vw',
+    width: '80vw',
   },
 }));
 
@@ -86,9 +89,8 @@ const profileHeadShotStyles = (): CSSObject => ({
 
 export const ProfileHeadShotMobile = styled(Grid)(({ theme }) => ({
     ...profileHeadShotStyles(),    
-    [theme.breakpoints.down('md')]: {
-        // fontSize: '1.2em',
-        // width: '60vw',
+    [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+        width: '100vw',
     },
     [theme.breakpoints.down('sm')]: {
         width: '100vw',
@@ -109,9 +111,8 @@ export const Icon = styled('img')(({ theme }) => ({
     filter: 'brightness(150%)',
     transition: 'all 0.2s ease-in-out',
   },
-  [theme.breakpoints.down('md')]: {
-      // fontSize: '1.2em',
-      // width: '60vw',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    height: '9vw',
   },
   [theme.breakpoints.down('sm')]: {
     padding: '0px 8px',
@@ -129,42 +130,11 @@ export const IconContainer = styled('div')({
   alignItems: 'center',
 });
 
-export const MaterialButton = styled('div')(({ theme }) => ({
-  textAlign: 'center',
-  alignContent: 'center',
-  color: 'ghostwhite',
-  marginTop: '6vh',
-  background: 'linear-gradient(#243d55, #232f35)',
-  borderRadius: '20px',
-  padding: '10px 20px',
-  width: 'fit-content',
-  fontFamily: 'MontserratStandardLight',
-  fontSize: '1.5em',
-  fontWeight: 600,
-  display: 'inline-block',
-  '&:hover': {
-    background: 'charcoal',
-    color: 'whitesmoke',
-    cursor: 'pointer',
-    shadow: '2px',
-    transition: 'all 0.2s ease-in-out',
-  },
-  
-  [theme.breakpoints.down('md')]: {
-      // fontSize: '1.2em',
-      // width: '60vw',
-  },
-  [theme.breakpoints.down('sm')]: {    
-    fontSize: '1em',
-  },
-  // You will need to adjust the media queries according to your theme breakpoints
-}));
-
 export const StyledImage = styled('img')(({ theme }) => ({
   maxWidth: '30vw',
   height: 'auto',
-  [theme.breakpoints.down('md')]: {
-    maxWidth: '20vw',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    maxWidth: '40vw',
   },
   [theme.breakpoints.down('sm')]: {
     maxWidth: '60vw',
@@ -185,13 +155,13 @@ export const BlogContainer = styled('div')(({ theme }) => ({
   marginTop: '10vh',
   display: 'flex',
   flexWrap: 'wrap',  
-  [theme.breakpoints.down('md')]: {
-    // width: '90vw',
+  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    width: '80vw',
   },
   [theme.breakpoints.down('sm')]: {
     width: '95vw',
     fontWeight: '400',
-    marginTop: '0vh',
+    marginTop: '-10vh',
   },
   // You will need to adjust the media queries according to your theme breakpoints
 }));

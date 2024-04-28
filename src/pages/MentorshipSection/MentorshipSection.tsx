@@ -1,8 +1,7 @@
 import * as React from "react"
-import {Image, Root, MentorshipImage, MentorshipHeader, MentorshipAbout} from "./MentorshipSection.styles";
-import { MaterialButton } from "../HomePageBlog/homepage.styles";
-import { Col, Row } from "react-grid-system";
+import {Root, MentorshipImage, MentorshipHeader, MentorshipAbout} from "./MentorshipSection.styles";
 import MentorshipImg from "./../../images/mentorshipImage.svg";
+import { MaterialButton } from "../index.styles";
 
 const MentorshipSection: React.FC<{}> = () => {
 

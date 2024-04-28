@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { media } from "../index.styles";
 
 export const Root = styled.div`   
-    background: linear-gradient(92deg, #546e7a, 2.51%, #153949  98.2%);
+    background: linear-gradient(92deg, #415f7b, 2.51%, #052339   98.2%);
     margin: auto;
     padding: 10vh 5vw;
     ${media.tablet} {
-        padding: 2vw 5vw;
+        padding: 4vw 10vw;
     }${media.phone} {
         padding: 2vw 5vw;
         padding: 4vh 10vw;
@@ -21,7 +21,7 @@ export const FooterText = styled.div`
     width: 80%;
     margin-top: 5vh;
     ${media.tablet} {
-        font-size: 4em;
+        font-size: 3em;
         line-height: 6vh;
     }
     ${media.phone} {        
@@ -40,9 +40,9 @@ export const FooterSubtext = styled.div`
     font-weight: 400;
     letter-spacing: 0px;
     ${media.tablet} {
-        font-size: 2em;
+        font-size: 1.8em;
         line-height: 4vh;
-        padding-top: 5vw;
+        padding-top: 1vw;
     }    
     ${media.phone} {
         padding: 2vw 4vw;
