@@ -1,5 +1,5 @@
 import * as React from "react"
-import {DeveloperName, BlogContainer, Root, DeveloperAbout, Icon, IconContainer, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, IconContainer, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles, IconImg, Icon} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
@@ -17,9 +17,26 @@ import { MaterialButton } from "../index.styles";
 const IntroductionSection: React.FC<{}> = () => {
   
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm')) 
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm')) ;
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-  const isMobileOrTablet = isMobile || isTablet
+  const isMobileOrTablet = isMobile || isTablet;
+
+  const handleGithubButtonOnClick = () => {
+    window.open("https://github.com/abhirupa-tech/", '_blank'); // Opens the URL in a new tab
+  };
+
+  const handleLinkedInButtonOnClick = () => {
+    window.open("https://www.linkedin.com/in/abhirupa-mitra/", '_blank'); // Opens the URL in a new tab
+  };
+
+  const handleInstgramButtonOnClick = () => {
+    window.open("https://www.instagram.com/thetravellingprogrammer/", '_blank'); // Opens the URL in a new tab
+  };
+
+  const handleEmailButtonOnClick = () => {
+    window.location.href = "mailto:yourname@example.com";
+  };
+
   return (
     <Root >
       {/* Navbar Section */}
@@ -27,11 +44,11 @@ const IntroductionSection: React.FC<{}> = () => {
 
       {/* Introduction Section */}
       <Grid container sx={{...homePageGridStyles(theme)}}>
-        {isMobileOrTablet && <ProfileHeadShotMobile xs={12} md={6} lg={5}>
+        {isMobileOrTablet && <ProfileHeadShotMobile xs={12}>
           <StyledImage src={ProfilePicture} alt="Profile Picture" />
         </ProfileHeadShotMobile> }
-        {!isMobileOrTablet && <Grid xs={0} md={0} lg={1}/>}
-        <Grid xs={12} md={6}>
+        {/* {!isMobileOrTablet && <Grid xs={0} md={0} lg={1}/>} */}
+        <Grid xs={12} md={7}>
           <DeveloperIntro>            
             <DeveloperName> Abhirupa </DeveloperName>            
             <DeveloperAbout>
@@ -40,10 +57,18 @@ const IntroductionSection: React.FC<{}> = () => {
             </DeveloperAbout>
             
             <IconContainer>
-              <Icon src={GithubIcon} alt="Image"/>
-              <Icon src={InstagramIcon} alt="Image"/>
-              <Icon src={LinkedInIcon} alt="Image"/>
-              <Icon src={MailIcon} alt="Image"/>
+              <Icon onClick={handleGithubButtonOnClick}>                
+                <IconImg src={GithubIcon} alt="Image"/>
+              </Icon>              
+              <Icon onClick={handleInstgramButtonOnClick}>                
+                <IconImg src={InstagramIcon} alt="Image"/>
+              </Icon>              
+              <Icon onClick={handleLinkedInButtonOnClick}>                
+                <IconImg src={LinkedInIcon} alt="Image"/>
+              </Icon>              
+              <Icon onClick={handleEmailButtonOnClick}>                
+                <IconImg src={MailIcon} alt="Image"/>
+              </Icon>
             </IconContainer> 
             <MaterialButton>Let me Mentor You</MaterialButton>
           </DeveloperIntro>

@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-import { CSSObject, Grid, Theme } from '@mui/material';
+import { CSSObject, Grid, IconButton, Theme } from '@mui/material';
 import { Col } from 'react-grid-system';
 import { Height } from '@mui/icons-material';
 
@@ -44,8 +44,8 @@ export const DeveloperName = styled('div')(({ theme }) => ({
   textAlign: 'center',
   width: '100%',
   marginTop: '60px',
-  fontSize: '8em',
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  fontSize: '14vh',
+  [theme.breakpoints.between('md', 'sm')]: {
     fontSize: '7vh',
     letterSpacing: '-0.1vh',
     marginTop: '5vh',
@@ -61,13 +61,13 @@ export const DeveloperName = styled('div')(({ theme }) => ({
 export const DeveloperAbout = styled('div')(({ theme }) => ({
   color: '#EFEFEF',
   fontFamily: 'Montserrat',
-  fontSize: '2em',
-  width: '90%',
+  fontSize: '3vh',
+  width: '70%',
   fontWeight: 500,
   letterSpacing: '1.2px',
   display: 'inline-block',
   textAlign: 'center',
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm') ]: {
+  [theme.breakpoints.between('md', 'sm') ]: {
     fontSize: '2.5vh',
     width: '80vw',
   },
@@ -89,7 +89,7 @@ const profileHeadShotStyles = (): CSSObject => ({
 
 export const ProfileHeadShotMobile = styled(Grid)(({ theme }) => ({
     ...profileHeadShotStyles(),    
-    [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.between('md', 'sm')]: {
         width: '100vw',
     },
     [theme.breakpoints.down('sm')]: {
@@ -103,22 +103,31 @@ export const ProfileHeadShotDefault = styled(Grid)(({ theme }) => ({
 
 export const Root = styled('div')({});
 
-export const Icon = styled('img')(({ theme }) => ({
-  paddingRight: '20px',
+export const Icon = styled(IconButton)(({ theme }) => ({
+  '&:hover': {
+    backgroundColor: 'inherit', // Reset the background color on hover
+  },
+}));
+
+export const IconImg = styled('img')(({ theme }) => ({
+  paddingRight: '8px',
   cursor: 'pointer',
-  height: '10vh',
+  height: '8vh',
+  fontSize: '2vh',
   '&:hover': {
     filter: 'brightness(150%)',
     transition: 'all 0.2s ease-in-out',
   },
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.up('md')]: {
+    fontSize: '4vh',
+  },
+  [theme.breakpoints.between('md', 'sm')]: {
     height: '9vw',
   },
   [theme.breakpoints.down('sm')]: {
     padding: '0px 8px',
     height: '10vw',
-  },
-  
+  },  
 }));
 
 export const IconContainer = styled('div')({
@@ -133,7 +142,7 @@ export const IconContainer = styled('div')({
 export const StyledImage = styled('img')(({ theme }) => ({
   maxWidth: '30vw',
   height: 'auto',
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.between('md', 'sm')]: {
     maxWidth: '40vw',
   },
   [theme.breakpoints.down('sm')]: {
@@ -150,12 +159,16 @@ export const IntroductionColumn = styled(Col)({
 export const BlogContainer = styled('div')(({ theme }) => ({
   backgroundColor: 'transparent',
   padding: 0,
-  width: '70%',
   margin: '0 auto',
   marginTop: '10vh',
   display: 'flex',
-  flexWrap: 'wrap',  
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  flexWrap: 'wrap',
+  [theme.breakpoints.up('md')]: {    
+    width: '70vw',
+    height: '70vh',
+    marginTop: '0vh',
+  },
+  [theme.breakpoints.between('md', 'sm')]: {
     width: '80vw',
   },
   [theme.breakpoints.down('sm')]: {

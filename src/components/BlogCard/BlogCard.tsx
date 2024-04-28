@@ -26,7 +26,13 @@ const BlogCard: React.FC<BlogData> = ({
     <Root >
       {!isMobileOrTablet && <Blog>
         <CardActionArea>
-          <BlogCardImage />
+          <CardMedia
+            component="img"
+            image={require("./../../images/blog1img.jpg")}
+            alt="Blog image"
+            sx={{ 
+              height: "45%",}}
+          />
           <BlogTextArea>
             <BlogCardHeader> {title} </BlogCardHeader>
             <BlogCardContent> {content} </BlogCardContent>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Container, Card } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { WidthFull } from '@mui/icons-material';
 
 // Define your styled components using MUI's styled utility
 export const Root = styled('div')(({ theme }) => ({
@@ -13,7 +14,7 @@ export const Root = styled('div')(({ theme }) => ({
   alignItems: 'center',
   marginTop: '10vh',
   marginBottom: '10vh',
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.between('md', 'sm')]: {
     textAlign: 'center',
   },
   [theme.breakpoints.down('sm')]: {
@@ -34,10 +35,14 @@ export const MentorshipHeader = styled('div')(({ theme }) => ({
   WebkitTextFillColor: 'transparent',
   textShadow: '0px 2px 2px rgba(0, 0, 0, 0.25)',
   fontFamily: 'MontserratHeaderBold',
-  fontSize: '8vh',
-  lineHeight: '9vh',
-  letterSpacing: '-3px',
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  fontSize: '7vh',
+  lineHeight: '7.5vh',
+  letterSpacing: '-0.3vh',
+  [theme.breakpoints.up('md')]: {
+    width: '60vw',
+    lineHeight: '8vh',
+  },
+  [theme.breakpoints.between('md', 'sm')]: {
     fontSize: '4em',
     lineHeight: '6vh',
   },
@@ -54,10 +59,14 @@ export const MentorshipAbout = styled('div')(({ theme }) => ({
   color: '#000',
   marginTop: '2vh',
   fontFamily: 'MontserratStandardLight',
-  fontSize: '2.5vh',
   fontWeight: 600,
-  letterSpacing: '1.2px',
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  letterSpacing: '1.2px',  
+  [theme.breakpoints.up('md')]: {
+    width: '60vw',
+    lineHeight: '5vh',
+    fontSize: '3.2vh',
+  },
+  [theme.breakpoints.between('md', 'sm')]: {
     fontSize: '2em',
     lineHeight: '4vh',
   },

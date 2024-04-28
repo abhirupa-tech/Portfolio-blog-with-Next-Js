@@ -6,13 +6,13 @@ export const Root = styled('div')(({ theme }) => ({
     textAlign: 'center',
     padding: '2vh 0vw',
     fontFamily: 'Montserrat',
-    fontSize: '1.4rem',
+    fontSize: '3vhrem',
     color: 'white',
     backgroundColor: '#243d55',
     zIndex: 1000,
     position: 'sticky',
     top: 0,
-    [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.between('md', 'sm')]: {
         color: 'smokewhite',
         fontSize: '2vh',
         padding: '3vh 0vw',
@@ -27,9 +27,6 @@ export const Navbar = styled('div')(({ theme }) => ({
     height: '10vh',
     backgroundColor: 'none',
     textAlign: 'center',
-    fontFamily: 'Montserrat',
-    fontSize: '1.4rem',
-    color: 'white',
     alignContent: 'center',
     [theme.breakpoints.down('sm')]: {
       fontSize: '2em',
