@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 export const Root = styled('div')(({ theme }) => ({
   margin: '0px 20px',
   alignItems: 'center',
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     margin: '30px 0px',
     width: '100%',
     height: '100%',
@@ -26,7 +26,7 @@ export const Blog = styled(Card)(({ theme }) => ({
     height: '70vh',
     width: '100%',
   },
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     marginTop: '0vw',
     marginBottom: '40px',
     width: '100%',
@@ -38,7 +38,7 @@ export const Blog = styled(Card)(({ theme }) => ({
 }));
 
 export const BlogMobile = styled(Card)(({ theme }) => ({
-    [theme.breakpoints.between('md', 'sm')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
         borderRadius: '30px',
         boxShadow: '10px 10px 15px 0px #00000060',
         height: '420px',
@@ -58,7 +58,7 @@ export const BlogCardHeader = styled('div')(({ theme }) => ({
   WebkitBoxOrient: 'vertical',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     fontSize: '2.2em',
     lineHeight: '1.2em',
     WebkitLineClamp: 3,
@@ -86,7 +86,7 @@ export const BlogCardContent = styled('div')(({ theme }) => ({
     '-webkit-box-orient': 'vertical',
     overflow: 'hidden',
     textOverflow: 'ellipsis',  
-    [theme.breakpoints.between('md', 'sm')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
         marginTop: '20px',
         fontSize: '1.4em',
         WebkitLineClamp: 6,
@@ -109,7 +109,7 @@ export const BlogCardImage = styled(CardMedia)(({ theme }) => ({
     image: `url(${BlogImage})`,
     alt: "Static Image",    
     component: "img",
-    [theme.breakpoints.between('md', 'sm')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
         component: "img",
         height: "20vh",
     },
@@ -120,7 +120,7 @@ export const BlogCardImage = styled(CardMedia)(({ theme }) => ({
 }));
 
 export const MobileBlogCardImage = styled(CardMedia)(({ theme }) => ({
-    [theme.breakpoints.between('md', 'sm')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
         component: "img",
         height: "140",
     },
@@ -150,7 +150,7 @@ export const CardAction = styled(Button)(({ theme }) => ({
     marginBottom: '2px !important',
     fontSize: '0.8em !important',
   },
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     marginBottom: '2px !important',
     fontSize: '1.4em !important',
   },

@@ -14,7 +14,7 @@ export const Root = styled('div')(({ theme }) => ({
   alignItems: 'center',
   marginTop: '10vh',
   marginBottom: '10vh',
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     textAlign: 'center',
   },
   [theme.breakpoints.down('sm')]: {
@@ -42,7 +42,7 @@ export const MentorshipHeader = styled('div')(({ theme }) => ({
     width: '60vw',
     lineHeight: '8vh',
   },
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     fontSize: '4em',
     lineHeight: '6vh',
   },
@@ -66,7 +66,7 @@ export const MentorshipAbout = styled('div')(({ theme }) => ({
     lineHeight: '5vh',
     fontSize: '3.2vh',
   },
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     fontSize: '2em',
     lineHeight: '4vh',
   },

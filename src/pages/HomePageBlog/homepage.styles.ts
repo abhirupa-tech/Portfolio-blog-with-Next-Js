@@ -45,8 +45,8 @@ export const DeveloperName = styled('div')(({ theme }) => ({
   width: '100%',
   marginTop: '60px',
   fontSize: '14vh',
-  [theme.breakpoints.between('md', 'sm')]: {
-    fontSize: '7vh',
+  [theme.breakpoints.between('sm', 'md')]: {
+    fontSize: '8vh',
     letterSpacing: '-0.1vh',
     marginTop: '5vh',
   },
@@ -67,7 +67,7 @@ export const DeveloperAbout = styled('div')(({ theme }) => ({
   letterSpacing: '1.2px',
   display: 'inline-block',
   textAlign: 'center',
-  [theme.breakpoints.between('md', 'sm') ]: {
+  [theme.breakpoints.between('sm', 'md') ]: {
     fontSize: '2.5vh',
     width: '80vw',
   },
@@ -89,7 +89,7 @@ const profileHeadShotStyles = (): CSSObject => ({
 
 export const ProfileHeadShotMobile = styled(Grid)(({ theme }) => ({
     ...profileHeadShotStyles(),    
-    [theme.breakpoints.between('md', 'sm')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
         width: '100vw',
     },
     [theme.breakpoints.down('sm')]: {
@@ -121,7 +121,7 @@ export const IconImg = styled('img')(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
     fontSize: '4vh',
   },
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     height: '9vw',
   },
   [theme.breakpoints.down('sm')]: {
@@ -142,7 +142,7 @@ export const IconContainer = styled('div')({
 export const StyledImage = styled('img')(({ theme }) => ({
   maxWidth: '30vw',
   height: 'auto',
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     maxWidth: '40vw',
   },
   [theme.breakpoints.down('sm')]: {
@@ -168,7 +168,7 @@ export const BlogContainer = styled('div')(({ theme }) => ({
     height: '70vh',
     marginTop: '0vh',
   },
-  [theme.breakpoints.between('md', 'sm')]: {
+  [theme.breakpoints.between('sm', 'md')]: {
     width: '80vw',
   },
   [theme.breakpoints.down('sm')]: {

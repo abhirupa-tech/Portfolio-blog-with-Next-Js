@@ -12,7 +12,7 @@ export const Root = styled('div')(({ theme }) => ({
     zIndex: 1000,
     position: 'sticky',
     top: 0,
-    [theme.breakpoints.between('md', 'sm')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
         color: 'smokewhite',
         fontSize: '2vh',
         padding: '3vh 0vw',
