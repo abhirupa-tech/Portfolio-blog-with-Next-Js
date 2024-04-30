@@ -1,18 +1,14 @@
 import * as React from "react"
-import {DeveloperName, BlogContainer, Root, DeveloperAbout, IconContainer, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles, IconImg, Icon} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
 import ProfilePicture from "../../images/ProfilePicture.png";
-
-import GithubIcon from "../../images/icons/githubIcon.png";
-import InstagramIcon from "../../images/icons/instagramIcon.png";
-import MailIcon from "../../images/icons/emailIcon.png";
-import LinkedInIcon from "../../images/icons/linkedInIcon.png";
 import Grid from '@mui/material/Unstable_Grid2';
 import { useTheme } from '@mui/material/styles';
 import { useMediaQuery } from "@mui/material";
 import { MaterialButton } from "../index.styles";
+import ActionIconBar from "../../components/ActionIconBar/ActionIconBar";
 
 const IntroductionSection: React.FC<{}> = () => {
   
@@ -20,22 +16,6 @@ const IntroductionSection: React.FC<{}> = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm')) ;
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
   const isMobileOrTablet = isMobile || isTablet;
-
-  const handleGithubButtonOnClick = () => {
-    window.open("https://github.com/abhirupa-tech/", '_blank'); // Opens the URL in a new tab
-  };
-
-  const handleLinkedInButtonOnClick = () => {
-    window.open("https://www.linkedin.com/in/abhirupa-mitra/", '_blank'); // Opens the URL in a new tab
-  };
-
-  const handleInstgramButtonOnClick = () => {
-    window.open("https://www.instagram.com/thetravellingprogrammer/", '_blank'); // Opens the URL in a new tab
-  };
-
-  const handleEmailButtonOnClick = () => {
-    window.location.href = "mailto:yourname@example.com";
-  };
 
   return (
     <Root >
@@ -56,20 +36,7 @@ const IntroductionSection: React.FC<{}> = () => {
                 the mountains or huddled up with a cozy book.
             </DeveloperAbout>
             
-            <IconContainer>
-              <Icon onClick={handleGithubButtonOnClick}>                
-                <IconImg src={GithubIcon} alt="Image"/>
-              </Icon>              
-              <Icon onClick={handleInstgramButtonOnClick}>                
-                <IconImg src={InstagramIcon} alt="Image"/>
-              </Icon>              
-              <Icon onClick={handleLinkedInButtonOnClick}>                
-                <IconImg src={LinkedInIcon} alt="Image"/>
-              </Icon>              
-              <Icon onClick={handleEmailButtonOnClick}>                
-                <IconImg src={MailIcon} alt="Image"/>
-              </Icon>
-            </IconContainer> 
+            <ActionIconBar/>
             <MaterialButton>Let me Mentor You</MaterialButton>
           </DeveloperIntro>
         </Grid>

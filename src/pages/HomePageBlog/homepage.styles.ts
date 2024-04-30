@@ -84,8 +84,7 @@ const profileHeadShotStyles = (): CSSObject => ({
     height: 'fit-content',
     textAlign: 'center',
     alignItems: 'center',
-});
-  
+});  
 
 export const ProfileHeadShotMobile = styled(Grid)(({ theme }) => ({
     ...profileHeadShotStyles(),    
@@ -102,42 +101,6 @@ export const ProfileHeadShotDefault = styled(Grid)(({ theme }) => ({
 }));
 
 export const Root = styled('div')({});
-
-export const Icon = styled(IconButton)(({ theme }) => ({
-  '&:hover': {
-    backgroundColor: 'inherit', // Reset the background color on hover
-  },
-}));
-
-export const IconImg = styled('img')(({ theme }) => ({
-  paddingRight: '8px',
-  cursor: 'pointer',
-  height: '8vh',
-  fontSize: '2vh',
-  '&:hover': {
-    filter: 'brightness(150%)',
-    transition: 'all 0.2s ease-in-out',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '4vh',
-  },
-  [theme.breakpoints.between('sm', 'md')]: {
-    height: '9vw',
-  },
-  [theme.breakpoints.down('sm')]: {
-    padding: '0px 8px',
-    height: '10vw',
-  },  
-}));
-
-export const IconContainer = styled('div')({
-  display: 'flex',
-  width: '100%',
-  alignContent: 'center',
-  marginTop: '2vh',
-  justifyContent: 'center',
-  alignItems: 'center',
-});
 
 export const StyledImage = styled('img')(({ theme }) => ({
   maxWidth: '30vw',

@@ -39,9 +39,9 @@ export const Blog = styled(Card)(({ theme }) => ({
 
 export const BlogMobile = styled(Card)(({ theme }) => ({
     [theme.breakpoints.between('sm', 'md')]: {
-        borderRadius: '30px',
+        borderRadius: '15px',
         boxShadow: '10px 10px 15px 0px #00000060',
-        height: '420px',
+        height: 'fit-content',
     },
     [theme.breakpoints.down('sm')]: {
         borderRadius: '16px',
@@ -59,7 +59,7 @@ export const BlogCardHeader = styled('div')(({ theme }) => ({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '2.2em',
+    fontSize: '3vh',
     lineHeight: '1.2em',
     WebkitLineClamp: 3,
   },
@@ -88,7 +88,7 @@ export const BlogCardContent = styled('div')(({ theme }) => ({
     textOverflow: 'ellipsis',  
     [theme.breakpoints.between('sm', 'md')]: {
         marginTop: '20px',
-        fontSize: '1.4em',
+        fontSize: '2vh',
         WebkitLineClamp: 6,
     },
     [theme.breakpoints.down('sm')]: {
@@ -152,7 +152,7 @@ export const CardAction = styled(Button)(({ theme }) => ({
   },
   [theme.breakpoints.between('sm', 'md')]: {
     marginBottom: '2px !important',
-    fontSize: '1.4em !important',
+    fontSize: '1.8vh !important',
   },
   [theme.breakpoints.down('sm')]: {
     marginBottom: '2px !important',

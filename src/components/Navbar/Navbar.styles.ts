@@ -6,7 +6,7 @@ export const Root = styled('div')(({ theme }) => ({
     textAlign: 'center',
     padding: '2vh 0vw',
     fontFamily: 'Montserrat',
-    fontSize: '3vhrem',
+    fontSize: '2vh',
     color: 'white',
     backgroundColor: '#243d55',
     zIndex: 1000,

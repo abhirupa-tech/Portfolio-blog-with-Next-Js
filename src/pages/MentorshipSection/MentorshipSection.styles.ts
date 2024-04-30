@@ -43,8 +43,8 @@ export const MentorshipHeader = styled('div')(({ theme }) => ({
     lineHeight: '8vh',
   },
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '4em',
-    lineHeight: '6vh',
+    fontSize: '6vh',
+    lineHeight: '7vh',
   },
   [theme.breakpoints.down('sm')]: {
     marginTop: '2vh',
@@ -67,7 +67,7 @@ export const MentorshipAbout = styled('div')(({ theme }) => ({
     fontSize: '3.2vh',
   },
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '2em',
+    fontSize: '2.5vh',
     lineHeight: '4vh',
   },
   [theme.breakpoints.down('sm')]: {
