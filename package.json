@@ -1,8 +1,8 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://abhirupa-tech.github.io/Portfolio-blog-with-Next-Js/",
+  "private": false,
+  "homepage": "https://travellingprogrammer.com/",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -32,7 +32,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo 'travellingprogrammer.com' > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
