@@ -8,7 +8,6 @@ export const Root = styled('div')(({ theme }) => ({
   [theme.breakpoints.between('sm', 'md')]: {
     margin: '30px 0px',
     width: '100%',
-    height: '100%',
   },
   [theme.breakpoints.down('sm')]: {
     marginTop: '30px',
