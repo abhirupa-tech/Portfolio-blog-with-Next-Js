@@ -46,7 +46,6 @@ export const BlogMobile = styled(Card)(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
         borderRadius: '16px',
         boxShadow: '4px 8px 6px -7px #242424',
-        height: '100%',
     },
 }));
 
