@@ -1,12 +1,12 @@
 import * as React from "react"
-import {DeveloperName, BlogContainer, Root, DeveloperAbout, DeveloperIntro, CustomRow, StyledImage, ProfileHeadShotMobile, ProfileHeadShotDefault, homePageGridStyles} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, DeveloperIntro, CustomRow, StyledImage, homePageGridStyles, ProfileHeadShot} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
 import ProfilePicture from "../../images/ProfilePicture.png";
 import Grid from '@mui/material/Unstable_Grid2';
 import { useTheme } from '@mui/material/styles';
-import { useMediaQuery } from "@mui/material";
+import { Container, useMediaQuery } from "@mui/material";
 import { MaterialButton } from "../index.styles";
 import ActionIconBar from "../../components/ActionIconBar/ActionIconBar";
 
@@ -17,18 +17,20 @@ const IntroductionSection: React.FC<{}> = () => {
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
   const isMobileOrTablet = isMobile || isTablet;
 
+  const handleMeetingBookingClick = () => {
+    window.open("https://topmate.io/abhirupa_mitra", '_blank');
+  };
+
   return (
     <Root >
       {/* Navbar Section */}
       <Navbar/>
 
       {/* Introduction Section */}
-      <Grid container sx={{...homePageGridStyles(theme)}}>
-        {isMobileOrTablet && <ProfileHeadShotMobile xs={12}>
-          <StyledImage src={ProfilePicture} alt="Profile Picture" />
-        </ProfileHeadShotMobile> }
-        {/* {!isMobileOrTablet && <Grid xs={0} md={0} lg={1}/>} */}
-        <Grid xs={12} md={7}>
+      <Container maxWidth="md">        
+          <ProfileHeadShot md={12}>
+            <StyledImage src={ProfilePicture} alt="Profile Picture" />
+          </ProfileHeadShot>
           <DeveloperIntro>            
             <DeveloperName> Abhirupa </DeveloperName>            
             <DeveloperAbout>
@@ -37,14 +39,9 @@ const IntroductionSection: React.FC<{}> = () => {
             </DeveloperAbout>
             
             <ActionIconBar/>
-            <MaterialButton>Let me Mentor You</MaterialButton>
+            <MaterialButton onClick={handleMeetingBookingClick}>Let me Mentor You</MaterialButton>
           </DeveloperIntro>
-        </Grid>
-                
-        {!isMobileOrTablet && <ProfileHeadShotDefault xs={12} md={5}>
-          <StyledImage src={ProfilePicture} alt="Profile Picture" />
-        </ProfileHeadShotDefault> }
-      </Grid>
+      </Container>
 
       {/* Blog Section */}
       
@@ -64,7 +61,7 @@ const IntroductionSection: React.FC<{}> = () => {
 
       {/* Redirect User to your Medium Website Page       */}
       <CustomRow>
-        <MaterialButton>Read Some More</MaterialButton>
+        <MaterialButton onClick={handleMeetingBookingClick}>Read Some More</MaterialButton>
       </CustomRow>
     </Root>
   )

@@ -11,13 +11,13 @@ export const Icon = styled(IconButton)(({ theme }) => ({
     paddingRight: '8px',
     cursor: 'pointer',
     height: '8vh',
-    fontSize: '2vh',
+    fontSize: '20px',
     '&:hover': {
       filter: 'brightness(150%)',
       transition: 'all 0.2s ease-in-out',
     },
     [theme.breakpoints.up('md')]: {
-      fontSize: '4vh',
+      height: '50px',
     },
     [theme.breakpoints.between('sm', 'md')]: {
       height: '7vh',

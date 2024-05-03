@@ -6,6 +6,7 @@ import MontserratBlack from "../fonts/Montserrat-Black.ttf";
 import { createGlobalStyle } from 'styled-components'
 import backgroundImg from "../images/HomePageBackground.png";
 import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
 
 export const Body = styled('div')(({ theme }) => ({
     maxWidth: '100vw',
@@ -37,17 +38,17 @@ export const GlobalStyle = createGlobalStyle`
     src: url(${MontserratBlack}) format('truetype');
   }`;
 
-export const MaterialButton = styled('div')(({ theme }) => ({
+export const MaterialButton = styled(Button)(({ theme }) => ({
   textAlign: 'center',
   alignContent: 'center',
   color: 'ghostwhite',
-  marginTop: '6vh',
+  margin: '6vh',
   background: 'linear-gradient(#082d50, #031a26)',
-  borderRadius: '20px',
+  borderRadius: '25px',
   padding: '10px 20px',
   width: 'fit-content',
   fontFamily: 'MontserratStandardLight',
-  fontSize: '1.5em',
+  fontSize: '15px',
   fontWeight: 600,
   display: 'inline-block',
   '&:hover': {
@@ -57,7 +58,7 @@ export const MaterialButton = styled('div')(({ theme }) => ({
     shadow: '2px',
     transition: 'all 0.2s ease-in-out',
   },  
-  [theme.breakpoints.down('md') && theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.up('sm') && theme.breakpoints.down('md')]: {
     fontSize: '2.5vh',
     fontWeight: 400,
     marginTop: '8vh', 
@@ -67,6 +68,7 @@ export const MaterialButton = styled('div')(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     fontSize: '2vh',
     fontWeight: 400,
+    marginTop: '2vh',
   },
 }));
 

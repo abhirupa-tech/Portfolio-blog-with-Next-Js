@@ -22,7 +22,7 @@ export const DeveloperIntro = styled('div')(({ theme }) => ({
 
 export const homePageGridStyles = (theme: Theme) => ({
     height: '85vh', 
-    marginTop:'15vh',    
+    marginTop:'100px',    
   [theme.breakpoints.down('md')]: {    
     marginTop: '10vh',
     height: 'fit-content',
@@ -43,8 +43,8 @@ export const DeveloperName = styled('div')(({ theme }) => ({
   letterSpacing: '-4px',
   textAlign: 'center',
   width: '100%',
-  marginTop: '60px',
-  fontSize: '14vh',
+  marginTop: '30px',
+  fontSize: '80px',
   [theme.breakpoints.between('sm', 'md')]: {
     fontSize: '8vh',
     letterSpacing: '-0.1vh',
@@ -52,7 +52,6 @@ export const DeveloperName = styled('div')(({ theme }) => ({
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '3em',
-    marginTop: '-14vh',
     letterSpacing: '0px',
     height: 'fit-content'
   },
@@ -61,7 +60,7 @@ export const DeveloperName = styled('div')(({ theme }) => ({
 export const DeveloperAbout = styled('div')(({ theme }) => ({
   color: '#EFEFEF',
   fontFamily: 'Montserrat',
-  fontSize: '3vh',
+  fontSize: '20px',
   width: '70%',
   fontWeight: 500,
   letterSpacing: '1.2px',
@@ -79,31 +78,23 @@ export const DeveloperAbout = styled('div')(({ theme }) => ({
   },
 }));
 
-// Define the common styles as a function returning a CSSObject
-const profileHeadShotStyles = (): CSSObject => ({
+export const ProfileHeadShot = styled(Grid)(({ theme }) => ({
     height: 'fit-content',
     textAlign: 'center',
     alignItems: 'center',
-});  
-
-export const ProfileHeadShotMobile = styled(Grid)(({ theme }) => ({
-    ...profileHeadShotStyles(),    
-    [theme.breakpoints.between('sm', 'md')]: {
-        width: '100vw',
-    },
-    [theme.breakpoints.down('sm')]: {
-        width: '100vw',
-    },
-}));
-
-export const ProfileHeadShotDefault = styled(Grid)(({ theme }) => ({
-    ...profileHeadShotStyles(),
+    marginTop: '10vh',
+    // [theme.breakpoints.between('sm', 'md')]: {
+    //     width: '100vw',
+    // },
+    // [theme.breakpoints.down('sm')]: {
+    //     width: '100vw',
+    // },
 }));
 
 export const Root = styled('div')({});
 
 export const StyledImage = styled('img')(({ theme }) => ({
-  maxWidth: '30vw',
+  maxWidth: '18vw',
   height: 'auto',
   [theme.breakpoints.between('sm', 'md')]: {
     maxWidth: '40vw',
@@ -137,7 +128,6 @@ export const BlogContainer = styled('div')(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     width: '95vw',
     fontWeight: '400',
-    marginTop: '-10vh',
   },
   // You will need to adjust the media queries according to your theme breakpoints
 }));
