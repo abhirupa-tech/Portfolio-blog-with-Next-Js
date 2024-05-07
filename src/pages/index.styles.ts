@@ -66,9 +66,10 @@ export const MaterialButton = styled(Button)(({ theme }) => ({
     padding: '1.5vh 4vh',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '2vh',
+    fontSize: '1.5vh',
     fontWeight: 400,
-    marginTop: '2vh',
+    marginTop: '2vh',    
+    padding: '10px 18px',
   },
 }));
 
