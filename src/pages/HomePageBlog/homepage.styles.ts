@@ -1,7 +1,6 @@
 import { styled } from '@mui/material/styles';
-import { CSSObject, Grid, IconButton, Theme } from '@mui/material';
+import { Grid, Theme } from '@mui/material';
 import { Col } from 'react-grid-system';
-import { Height } from '@mui/icons-material';
 
 export const DeveloperIntro = styled('div')(({ theme }) => ({
   margin: 'auto!important',
@@ -94,7 +93,7 @@ export const ProfileHeadShot = styled(Grid)(({ theme }) => ({
 export const Root = styled('div')({});
 
 export const StyledImage = styled('img')(({ theme }) => ({
-  maxWidth: '18vw',
+  maxWidth: '400px',
   height: 'auto',
   [theme.breakpoints.between('sm', 'md')]: {
     maxWidth: '40vw',

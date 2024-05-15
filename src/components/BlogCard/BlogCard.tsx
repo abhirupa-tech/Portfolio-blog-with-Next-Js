@@ -1,6 +1,6 @@
 import * as React from "react"
-import {BlogCardContent, BlogCardHeader, BlogCardImage, Blog, Root, BlogCardTag, CardAction, BlogTextArea, BlogMobile} from "./BlogCard.styles";
-import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import {BlogCardContent, BlogCardHeader, Blog, Root, CardAction, BlogTextArea, BlogMobile} from "./BlogCard.styles";
+import { CardActionArea, CardContent, CardMedia } from "@mui/material";
 import { useTheme, useMediaQuery } from '@mui/material/';
 
 import Box from '@mui/material/Box';

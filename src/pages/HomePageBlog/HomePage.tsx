@@ -15,7 +15,6 @@ const IntroductionSection: React.FC<{}> = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm')) ;
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-  const isMobileOrTablet = isMobile || isTablet;
 
   const handleMeetingBookingClick = () => {
     window.open("https://topmate.io/abhirupa_mitra", '_blank');
