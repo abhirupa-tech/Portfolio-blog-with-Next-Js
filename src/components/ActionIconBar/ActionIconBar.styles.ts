@@ -9,7 +9,7 @@ export const Icon = styled(IconButton)(({ theme }) => ({
   }));
   
   export const IconImg = styled('img')(({ theme }) => ({
-    paddingRight: '12px',
+    paddingRight: '24px',
     cursor: 'pointer',
     '&:hover': {
       filter: 'brightness(150%)',

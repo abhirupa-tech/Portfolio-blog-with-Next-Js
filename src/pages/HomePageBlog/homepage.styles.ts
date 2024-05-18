@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-import { Container, Grid, Theme } from '@mui/material';
+import { Box, Container, Grid, Theme } from '@mui/material';
 import { Col } from 'react-grid-system';
 
 export const DeveloperIntro = styled(Grid)(({ theme }) => ({
@@ -19,8 +19,9 @@ export const DeveloperIntro = styled(Grid)(({ theme }) => ({
   // },
 }));
 
-export const IntroGrid = styled(Container)(({ theme }) => ({
-  maxWidth: "800px",
+export const Root = styled(Container)(({ theme }) => ({
+  maxWidth: "768px",
+  padding: '80px 0px',
 }));
 
 export const homePageGridStyles = (theme: Theme) => ({
@@ -35,7 +36,7 @@ export const homePageGridStyles = (theme: Theme) => ({
   },
 });
 
-export const DeveloperName = styled('div')(({ theme }) => ({
+export const DeveloperName = styled(Box)(({ theme }) => ({
   color: '#000000',
   fontFamily: 'MontserratHeaderBold',
   lineHeight: 'normal',
@@ -54,13 +55,10 @@ export const DeveloperName = styled('div')(({ theme }) => ({
   },
 }));
 
-export const DeveloperAbout = styled('div')(({ theme }) => ({
+export const DeveloperAbout = styled(Box)(({ theme }) => ({
   color: '#000000',
-  fontFamily: 'MontserratRegular',
-  fontSize: '14px',
-  width: '100%',
-  fontWeight: 500,
-  letterSpacing: '0.8px',
+  fontSize: '18px',
+  width: '80%',
   display: 'inline-block',
   textAlign: 'left',
   [theme.breakpoints.between('sm', 'md') ]: {
@@ -82,7 +80,6 @@ export const ProfileHeadShot = styled(Grid)(({ theme }) => ({
     padding: '40px'
 }));
 
-export const Root = styled('div')({});
 
 export const StyledImage = styled('img')(({ theme }) => ({
   maxWidth: '240px',

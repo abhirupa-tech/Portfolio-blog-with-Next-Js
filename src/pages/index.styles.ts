@@ -47,10 +47,10 @@ export const MaterialButton = styled(Button)(({ theme }) => ({
   margin: '10px 0px',
   background: '#D8D2C4',
   borderRadius: '25px',
-  padding: '6px 15px',
+  padding: '6px 12px',
   width: 'fit-content',
   fontFamily: 'MontserratStandardLight',
-  fontSize: '12px',
+  fontSize: '10px',
   fontWeight: 600,
   display: 'inline-block',
   '&:hover': {

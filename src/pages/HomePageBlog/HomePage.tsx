@@ -1,15 +1,16 @@
 import * as React from "react"
-import {DeveloperName, BlogContainer, Root, DeveloperAbout, IntroGrid, CustomRow, StyledImage, homePageGridStyles, DeveloperIntro, ProfileHeadShot} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, CustomRow, StyledImage, DeveloperIntro, ProfileHeadShot} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
 import ProfilePicture from "../../images/ProfilePicture.png";
 import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/material/styles';
-import { Container, useMediaQuery } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import { MaterialButton } from "../index.styles";
 import ActionIconBar from "../../components/ActionIconBar/ActionIconBar";
 import { DEVELOPER_ABOUT_P1, DEVELOPER_ABOUT_P2, DEVELOPER_NAME } from "../../constants";
+import CustomerReviews from "../../components/CustomerReviews/CustomerReviews";
 
 const IntroductionSection: React.FC<{}> = () => {
   
@@ -22,29 +23,25 @@ const IntroductionSection: React.FC<{}> = () => {
   };
 
   return (
-    <Root >
+    <Root fixed >
       {/* Navbar Section */}
       <Navbar/>
 
-      {/* Introduction Section */}
+      <Grid container spacing={2}>
+        <ProfileHeadShot sm={12} md={4}>
+          <StyledImage src={ProfilePicture} alt="Profile Picture" />
+        </ProfileHeadShot>
+        <DeveloperIntro sm={12} md={8}>            
+          <DeveloperName>{DEVELOPER_NAME} </DeveloperName>            
+          <DeveloperAbout>
+              <p>{DEVELOPER_ABOUT_P1}</p>
+              <p>{DEVELOPER_ABOUT_P2}</p>
+          </DeveloperAbout>          
+          <ActionIconBar/>
+        </DeveloperIntro>
+      </Grid>
       
-      <IntroGrid>
-        <Grid container spacing={2}>
-          <ProfileHeadShot sm={12} md={5}>
-            <StyledImage src={ProfilePicture} alt="Profile Picture" />
-          </ProfileHeadShot>
-          <DeveloperIntro sm={12} md={7}>            
-            <DeveloperName>{DEVELOPER_NAME} </DeveloperName>            
-            <DeveloperAbout>
-                <p>{DEVELOPER_ABOUT_P1}</p>
-                <p>{DEVELOPER_ABOUT_P2}</p>
-            </DeveloperAbout>
-            
-            <ActionIconBar/>
-            <MaterialButton onClick={handleMeetingBookingClick}>Let me Mentor You</MaterialButton>
-          </DeveloperIntro>
-        </Grid>          
-      </IntroGrid>
+      <CustomerReviews/>
 
       {/* Blog Section */}
       
