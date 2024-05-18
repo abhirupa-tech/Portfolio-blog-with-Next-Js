@@ -1,27 +1,30 @@
 import { styled } from '@mui/material/styles';
-import { Grid, Theme } from '@mui/material';
+import { Container, Grid, Theme } from '@mui/material';
 import { Col } from 'react-grid-system';
 
-export const DeveloperIntro = styled('div')(({ theme }) => ({
+export const DeveloperIntro = styled(Grid)(({ theme }) => ({
   margin: 'auto!important',
-  padding: '0px!important',
+  padding: '20px!important',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
-  textAlign: 'center',
-  alignItems: 'center',   
-  [theme.breakpoints.down('md')]: {
-    // fontSize: '1.2em',
-    // width: '60vw',
-  },
-  [theme.breakpoints.down('sm')]: {
-    height: 'fit-content',
-  },
+  justifyContent: 'left',
+  textAlign: 'left',
+  alignItems: 'left',   
+  // [theme.breakpoints.down('md')]: {
+  //   // fontSize: '1.2em',
+  //   // width: '60vw',
+  // },
+  // [theme.breakpoints.down('sm')]: {
+  //   height: 'fit-content',
+  // },
+}));
+
+export const IntroGrid = styled(Container)(({ theme }) => ({
+  maxWidth: "800px",
 }));
 
 export const homePageGridStyles = (theme: Theme) => ({
-    height: '85vh', 
-    marginTop:'100px',    
+    height: '85vh',
   [theme.breakpoints.down('md')]: {    
     marginTop: '10vh',
     height: 'fit-content',
@@ -33,17 +36,12 @@ export const homePageGridStyles = (theme: Theme) => ({
 });
 
 export const DeveloperName = styled('div')(({ theme }) => ({
-  color: '#FFFFFF',
-  textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+  color: '#000000',
   fontFamily: 'MontserratHeaderBold',
-  fontStyle: 'normal',
-  fontWeight: '400',
   lineHeight: 'normal',
-  letterSpacing: '-4px',
-  textAlign: 'center',
+  textAlign: 'left',
   width: '100%',
-  marginTop: '30px',
-  fontSize: '80px',
+  fontSize: '25px',
   [theme.breakpoints.between('sm', 'md')]: {
     fontSize: '8vh',
     letterSpacing: '-0.1vh',
@@ -57,14 +55,14 @@ export const DeveloperName = styled('div')(({ theme }) => ({
 }));
 
 export const DeveloperAbout = styled('div')(({ theme }) => ({
-  color: '#EFEFEF',
-  fontFamily: 'Montserrat',
-  fontSize: '20px',
-  width: '70%',
+  color: '#000000',
+  fontFamily: 'MontserratRegular',
+  fontSize: '14px',
+  width: '100%',
   fontWeight: 500,
-  letterSpacing: '1.2px',
+  letterSpacing: '0.8px',
   display: 'inline-block',
-  textAlign: 'center',
+  textAlign: 'left',
   [theme.breakpoints.between('sm', 'md') ]: {
     fontSize: '2.5vh',
     width: '80vw',
@@ -79,21 +77,15 @@ export const DeveloperAbout = styled('div')(({ theme }) => ({
 
 export const ProfileHeadShot = styled(Grid)(({ theme }) => ({
     height: 'fit-content',
-    textAlign: 'center',
-    alignItems: 'center',
-    marginTop: '10vh',
-    // [theme.breakpoints.between('sm', 'md')]: {
-    //     width: '100vw',
-    // },
-    // [theme.breakpoints.down('sm')]: {
-    //     width: '100vw',
-    // },
+    textAlign: 'right',
+    alignItems: 'right',
+    padding: '40px'
 }));
 
 export const Root = styled('div')({});
 
 export const StyledImage = styled('img')(({ theme }) => ({
-  maxWidth: '400px',
+  maxWidth: '240px',
   height: 'auto',
   [theme.breakpoints.between('sm', 'md')]: {
     maxWidth: '40vw',

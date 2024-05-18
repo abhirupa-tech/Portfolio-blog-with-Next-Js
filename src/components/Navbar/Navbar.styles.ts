@@ -2,15 +2,15 @@ import { styled } from '@mui/material/styles';
 import { CSSObject, Grid, Theme } from '@mui/material';
 
 export const Root = styled('div')(({ theme }) => ({
-    height: 'fit-content',
+    height: '40px',
+    marginBottom: '20px',
     textAlign: 'center',
     padding: '2vh 0vw',
     fontFamily: 'Montserrat',
     fontSize: '2vh',
-    color: 'white',
-    backgroundColor: '#243d55',
+    color: 'smokegrey',
+    backgroundColor: 'transparent',
     zIndex: 1000,
-    position: 'sticky',
     top: 0,
     [theme.breakpoints.between('sm', 'md')]: {
         color: 'smokewhite',
@@ -24,7 +24,7 @@ export const Root = styled('div')(({ theme }) => ({
 }));
 
 export const Navbar = styled('div')(({ theme }) => ({
-    height: '10vh',
+    height: '40px',
     backgroundColor: 'none',
     textAlign: 'center',
     alignContent: 'center',

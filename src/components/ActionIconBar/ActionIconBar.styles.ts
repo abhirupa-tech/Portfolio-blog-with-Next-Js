@@ -5,19 +5,18 @@ export const Icon = styled(IconButton)(({ theme }) => ({
     '&:hover': {
       backgroundColor: 'inherit', // Reset the background color on hover
     },
+    padding: "0px",
   }));
   
   export const IconImg = styled('img')(({ theme }) => ({
-    paddingRight: '8px',
+    paddingRight: '12px',
     cursor: 'pointer',
-    height: '8vh',
-    fontSize: '20px',
     '&:hover': {
       filter: 'brightness(150%)',
       transition: 'all 0.2s ease-in-out',
     },
     [theme.breakpoints.up('md')]: {
-      height: '50px',
+      height: '40px',
     },
     [theme.breakpoints.between('sm', 'md')]: {
       height: '7vh',
@@ -30,7 +29,7 @@ export const Icon = styled(IconButton)(({ theme }) => ({
   
   export const IconContainer = styled('div')({
     display: 'flex',
-    width: '100%',
+    width: 'fit-content',
     alignContent: 'center',
     marginTop: '2vh',
     justifyContent: 'center',

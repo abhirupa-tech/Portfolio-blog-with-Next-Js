@@ -1,14 +1,15 @@
 import * as React from "react"
-import {DeveloperName, BlogContainer, Root, DeveloperAbout, DeveloperIntro, CustomRow, StyledImage, homePageGridStyles, ProfileHeadShot} from "./homepage.styles";
+import {DeveloperName, BlogContainer, Root, DeveloperAbout, IntroGrid, CustomRow, StyledImage, homePageGridStyles, DeveloperIntro, ProfileHeadShot} from "./homepage.styles";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import { blogItems } from "../../utils";
 import Navbar from "../../components/Navbar/Navbar";
 import ProfilePicture from "../../images/ProfilePicture.png";
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/material/styles';
 import { Container, useMediaQuery } from "@mui/material";
 import { MaterialButton } from "../index.styles";
 import ActionIconBar from "../../components/ActionIconBar/ActionIconBar";
+import { DEVELOPER_ABOUT_P1, DEVELOPER_ABOUT_P2, DEVELOPER_NAME } from "../../constants";
 
 const IntroductionSection: React.FC<{}> = () => {
   
@@ -26,21 +27,24 @@ const IntroductionSection: React.FC<{}> = () => {
       <Navbar/>
 
       {/* Introduction Section */}
-      <Container maxWidth="md">        
-          <ProfileHeadShot md={12}>
+      
+      <IntroGrid>
+        <Grid container spacing={2}>
+          <ProfileHeadShot sm={12} md={5}>
             <StyledImage src={ProfilePicture} alt="Profile Picture" />
           </ProfileHeadShot>
-          <DeveloperIntro>            
-            <DeveloperName> Abhirupa </DeveloperName>            
+          <DeveloperIntro sm={12} md={7}>            
+            <DeveloperName>{DEVELOPER_NAME} </DeveloperName>            
             <DeveloperAbout>
-                I Build Products at Microsoft, India. If you do not find me at my computer then I am probably out in
-                the mountains or huddled up with a cozy book.
+                <p>{DEVELOPER_ABOUT_P1}</p>
+                <p>{DEVELOPER_ABOUT_P2}</p>
             </DeveloperAbout>
             
             <ActionIconBar/>
             <MaterialButton onClick={handleMeetingBookingClick}>Let me Mentor You</MaterialButton>
           </DeveloperIntro>
-      </Container>
+        </Grid>          
+      </IntroGrid>
 
       {/* Blog Section */}
       

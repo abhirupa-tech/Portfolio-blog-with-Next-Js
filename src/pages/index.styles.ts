@@ -3,17 +3,15 @@ import Montserrat from "../fonts/MontserratAlternates-Light.ttf";
 import MontserratStandardLight from "../fonts/Montserrat-ExtraLight.ttf";
 import MontserratHeaderBold from "../fonts/Montserrat-Bold.ttf";
 import MontserratBlack from "../fonts/Montserrat-Black.ttf";
+import MontserratRegular from "../fonts/Montserrat-Regular.ttf";
 import { createGlobalStyle } from 'styled-components'
-import backgroundImg from "../images/HomePageBackground.png";
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 
 export const Body = styled('div')(({ theme }) => ({
     maxWidth: '100vw',
-    backgroundImage: `url(${backgroundImg})`,
     padding: '0',
-    backgroundSize: 'cover', /* This ensures the image covers the entire background */
-    backgroundRepeat: 'no-repeat', /* Prevents repetition of the image */
+    backgroundColor: '#F6F6F6',
 }));
 
 export const GlobalStyle = createGlobalStyle`
@@ -36,24 +34,28 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'MontserratBlack';
     src: url(${MontserratBlack}) format('truetype');
+  }
+  @font-face {
+    font-family: 'MontserratRegular';
+    src: url(${MontserratRegular}) format('truetype');
   }`;
 
 export const MaterialButton = styled(Button)(({ theme }) => ({
   textAlign: 'center',
   alignContent: 'center',
-  color: 'ghostwhite',
-  margin: '6vh',
-  background: 'linear-gradient(#082d50, #031a26)',
+  color: 'black',
+  margin: '10px 0px',
+  background: '#D8D2C4',
   borderRadius: '25px',
-  padding: '10px 20px',
+  padding: '6px 15px',
   width: 'fit-content',
   fontFamily: 'MontserratStandardLight',
-  fontSize: '15px',
+  fontSize: '12px',
   fontWeight: 600,
   display: 'inline-block',
   '&:hover': {
-    background: 'charcoal',
-    color: 'whitesmoke',
+    background:'#cdbe9d',
+    color: 'black',
     cursor: 'pointer',
     shadow: '2px',
     transition: 'all 0.2s ease-in-out',
