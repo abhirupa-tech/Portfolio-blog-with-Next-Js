@@ -11,7 +11,7 @@ export const Root = styled('div')(({ theme }) => ({
 
 export const BlogCard = styled(Paper)(({ theme }) => ({
   borderRadius: '20px !important',
-  height: '400px',
+  height: '300px',
   padding: '30px',
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
   url(${Background})`,

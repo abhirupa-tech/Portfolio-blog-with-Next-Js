@@ -27,10 +27,10 @@ const BlogCards: React.FC<{}> = ({
         direction="row"
         justifyContent="space-evenly"
         alignItems="center"
-        spacing={8}
+        spacing={4}
       >
         {Array.from(Array(3)).map((_, index) => (
-          <Grid item xs={12} sm={12} md={4} key={index}>
+          <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
             <BlogCard elevation={2}>
               <BlogContent>
                 <BlogCardHeader>Some heading which is long to test the card limit which seems to be decent for now.</BlogCardHeader>

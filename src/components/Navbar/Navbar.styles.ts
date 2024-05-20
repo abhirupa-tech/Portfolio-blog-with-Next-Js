@@ -2,12 +2,11 @@ import { styled } from '@mui/material/styles';
 import { CSSObject, Grid, Theme } from '@mui/material';
 
 export const Root = styled('div')(({ theme }) => ({
-    height: '40px',
-    marginBottom: '20px',
     textAlign: 'center',
-    padding: '2vh 0vw',
+    padding: '20px 0px',
     fontFamily: 'Montserrat',
-    fontSize: '2vh',
+    fontSize: '14px',
+    borderBottom: '1px solid grey',
     color: 'smokegrey',
     backgroundColor: 'transparent',
     zIndex: 1000,
