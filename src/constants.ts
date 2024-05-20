@@ -3,6 +3,10 @@ import { CustomerReviewCard } from "./components/CustomerReviews/CustomerReviews
 export const DEVELOPER_NAME = "Hi, I'm Abhirupa"
 export const DEVELOPER_ABOUT_P1 = "I am a Software Developer with 4 years of Experience working on Android and Web Projects. As a ReactsJS afficionado, I love bringing functional and creative websites live. I have a special knack for creating  Architectural LLD Designs to solve exciting problems. "
 export const DEVELOPER_ABOUT_P2 = "I also love mentoring early careerists, under graduates and help them secure a job in Tech. Empowering the next generation of tech enthusiasts brings fulfillment to my journey.";
+export const MENTORSHIP_HEADER = "Get Your Resume reviewed, avail Mentoring Sessions and Mock Interviews to Boost your Career";
+export const MENTORSHIP_ABOUT = "Having experience interviewing for Micrsoft, Google and the likes, I am offering mentorship and mock interviews to aspiring engineers. I can help you with your technical skills and guide you through the process of becoming a successful engineer. Let’s me help you achieve your goals."
+export const COMMUNITY_SECTION_HEADER = "Join the Community!";
+export const COMMUNITY_SECTION_TEXT="Join my Community to get Free and Quick Access to everything Tech and Travel. Contribute and get Benefited at the Same Time. We are on Discord and Instagram."
 
 export const reviews : CustomerReviewCard[] =[
     {

@@ -9,9 +9,9 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 
 export const Body = styled('div')(({ theme }) => ({
-    maxWidth: '100vw',
-    padding: '0',
-    backgroundColor: '#F6F6F6',
+  maxWidth: '100vw',
+  backgroundColor: '#F6F6F6',
+  padding: '0',
 }));
 
 export const GlobalStyle = createGlobalStyle`

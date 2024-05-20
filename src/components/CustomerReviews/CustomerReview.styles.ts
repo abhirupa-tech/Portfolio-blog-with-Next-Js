@@ -1,11 +1,5 @@
 import { styled } from '@mui/material/styles';
-import { Box, Container, Grid, Paper, Theme } from '@mui/material';
-import { Col } from 'react-grid-system';
-
-export const DeveloperIntro = styled(Grid)(({ theme }) => ({
-  margin: 'auto!important',
-  padding: '20px!important',
-}));
+import { Box, Grid, Paper } from '@mui/material';
 
 export const Root = styled(Grid)(({ theme }) => ({
   margin: 'auto!important',
@@ -17,6 +11,9 @@ export const Card = styled(Paper)(({ theme }) => ({
   padding: '20px',
   fontSize: '18px',
   borderRadius: '10px',
+  [theme.breakpoints.down('sm')]: {
+    width: 'unset',
+  },
 }));
 
 export const QuoteMarks = styled(Box)(({ theme }) => ({

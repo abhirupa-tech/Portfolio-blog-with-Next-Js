@@ -29,7 +29,7 @@ const CustomerReviews: React.FC<{}> = ({
 
   return (
     <Root >
-      <Stack direction="row" spacing={2}>
+      <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
         {reviews.map((review) => (
           getComposedCard(review.reviewText ?? "", review.reviewerName ?? "")
         ))}

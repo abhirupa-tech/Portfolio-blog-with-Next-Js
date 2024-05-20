@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-import { BlogData } from "./components/BlogCard/BlogCard";
+import { BlogData } from "./components/BlogCard/BlogCards";
 
 export const blogItems : BlogData[] = [
     {
