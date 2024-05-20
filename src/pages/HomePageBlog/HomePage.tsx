@@ -5,7 +5,7 @@ import ProfilePicture from "../../images/ProfilePicture.png";
 import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/material/styles';
 import ActionIconBar from "../../components/ActionIconBar/ActionIconBar";
-import { COMMUNITY_SECTION_HEADER, COMMUNITY_SECTION_TEXT, DEVELOPER_ABOUT_P1, DEVELOPER_ABOUT_P2, DEVELOPER_NAME, MENTORSHIP_ABOUT, MENTORSHIP_HEADER } from "../../constants";
+import { COMMUNITY_SECTION_HEADER, COMMUNITY_SECTION_TEXT, DEVELOPER_ABOUT_P1, DEVELOPER_ABOUT_P2, DEVELOPER_NAME, MENTORSHIP_ABOUT, MENTORSHIP_HEADER, blogs } from "../../constants";
 import CustomerReviews from "../../components/CustomerReviews/CustomerReviews";
 import BlogCards from "../../components/BlogCard/BlogCards";
 import GenericTextSection from "../../components/GenericTextSection/GenericTextSection";
@@ -34,7 +34,7 @@ const IntroductionSection: React.FC<{}> = () => {
       
       <CustomerReviews/>
       <GenericTextSection header={MENTORSHIP_HEADER} text={MENTORSHIP_ABOUT} />   
-      <BlogCards/>      
+      <BlogCards {...blogs}/>      
       <GenericTextSection header={COMMUNITY_SECTION_HEADER} text={COMMUNITY_SECTION_TEXT} />
       
     </Root>

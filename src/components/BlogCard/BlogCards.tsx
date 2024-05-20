@@ -6,13 +6,15 @@ import { useTheme, useMediaQuery } from '@mui/material/';
 
 export interface BlogData {
   title : string,
-  content: string,
   date : string,
-  tags : string[],
-  imageUrl : string,
 }
 
-const BlogCards: React.FC<{}> = ({
+export interface Blogs {
+  blogs: BlogData[];
+}
+
+const BlogCards: React.FC<Blogs> = ({
+  blogs,  
 }) => {
 
   const theme = useTheme();
@@ -29,12 +31,12 @@ const BlogCards: React.FC<{}> = ({
         alignItems="center"
         spacing={4}
       >
-        {Array.from(Array(3)).map((_, index) => (
+        {Array.from(blogs).map((blog, index) => (
           <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
             <BlogCard elevation={2}>
               <BlogContent>
-                <BlogCardHeader>Some heading which is long to test the card limit which seems to be decent for now.</BlogCardHeader>
-                <BlogCardDate>20th May, 2015</BlogCardDate>
+                <BlogCardHeader>{blog.title}</BlogCardHeader>
+                <BlogCardDate>{blog.date}</BlogCardDate>
               </BlogContent>
             </BlogCard>
           </Grid>

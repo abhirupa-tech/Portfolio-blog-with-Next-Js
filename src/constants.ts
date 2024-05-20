@@ -1,3 +1,5 @@
+import { title } from "process";
+import { Blogs } from "./components/BlogCard/BlogCards";
 import { CustomerReviewCard } from "./components/CustomerReviews/CustomerReviews";
 
 export const DEVELOPER_NAME = "Hi, I'm Abhirupa"
@@ -18,3 +20,15 @@ export const reviews : CustomerReviewCard[] =[
         reviewerName : "Mahima",
     },
 ]
+
+export const blogs : Blogs = {
+    blogs:
+    [{
+        title: "Create Simplified Parallax Effects Using Next.js + GSAP",
+        date: "May 16, 2024",
+    },
+    {
+        title: "Building Visually Accessible Websites by Supporting Contrast Theming",
+        date: "May 4, 2024",
+    }]
+}
