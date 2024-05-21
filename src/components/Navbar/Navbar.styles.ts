@@ -1,5 +1,4 @@
 import { styled } from '@mui/material/styles';
-import { CSSObject, Grid, Theme } from '@mui/material';
 
 export const Root = styled('div')(({ theme }) => ({
     textAlign: 'center',

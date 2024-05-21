@@ -26,9 +26,11 @@ export const blogs : Blogs = {
     [{
         title: "Create Simplified Parallax Effects Using Next.js + GSAP",
         date: "May 16, 2024",
+        redirectionLink : "https://medium.com/codex/create-simplified-parallax-effects-using-next-js-gsap-in-10-mins-82d4d60cd15f",
     },
     {
         title: "Building Visually Accessible Websites by Supporting Contrast Theming",
         date: "May 4, 2024",
+        redirectionLink : "https://medium.com/@mitra.abhirupa/building-visually-accessible-websites-by-supporting-contrast-theming-300cd2f603b9",
     }]
 }

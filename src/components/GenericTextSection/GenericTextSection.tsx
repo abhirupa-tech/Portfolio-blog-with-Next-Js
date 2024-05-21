@@ -1,23 +1,27 @@
 import * as React from "react"
-import {Root, MentorshipImage, MentorshipHeader, MentorshipAbout} from "./GenericTextSection.styles";
-import MentorshipImg from "./../../images/mentorshipImage.svg";
+import {Root, MentorshipHeader, MentorshipAbout} from "./GenericTextSection.styles";
 import { MaterialButton } from "../../pages/index.styles";
-import { MENTORSHIP_ABOUT, MENTORSHIP_HEADER } from "../../constants";
 
 export interface GenericTextSection {
   header: string;
   text: string;
+  shouldShowButton: boolean;
+  buttonText?: string;
+  buttonRedirectionLink?: string;
 }
 const GenericTextSection: React.FC<GenericTextSection> = ({
   header,
   text,
+  shouldShowButton,
+  buttonText,
+  buttonRedirectionLink,
 }) => {
 
   return (
     <Root>
         <MentorshipHeader>{header}</MentorshipHeader>
         <MentorshipAbout>{text}</MentorshipAbout>
-        <MaterialButton>Book A Meeting</MaterialButton>      
+        {shouldShowButton && <MaterialButton>{buttonText}</MaterialButton>}
     </Root>
   )
 }

@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Container, Card } from '@mui/material';
+import { Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 // Define your styled components using MUI's styled utility

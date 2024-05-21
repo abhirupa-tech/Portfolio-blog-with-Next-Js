@@ -13,8 +13,8 @@ export const BlogCard = styled(Paper)(({ theme }) => ({
   borderRadius: '20px !important',
   height: '300px',
   padding: '30px',
-  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-  url(${Background})`,
+  // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+  // url(${Background})`,
   backgroundSize: 'cover', /* This ensures the image covers the entire background */
   backgroundRepeat: 'no-repeat', /* Prevents repetition of the image */
   position: 'relative',

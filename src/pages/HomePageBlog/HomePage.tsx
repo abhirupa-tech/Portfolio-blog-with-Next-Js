@@ -1,9 +1,7 @@
 import * as React from "react"
 import {DeveloperName, Root, DeveloperAbout, StyledImage, DeveloperIntro, ProfileHeadShot} from "./homepage.styles";
-import Navbar from "../../components/Navbar/Navbar";
 import ProfilePicture from "../../images/ProfilePicture.png";
 import Grid from '@mui/material/Grid';
-import { useTheme } from '@mui/material/styles';
 import ActionIconBar from "../../components/ActionIconBar/ActionIconBar";
 import { COMMUNITY_SECTION_HEADER, COMMUNITY_SECTION_TEXT, DEVELOPER_ABOUT_P1, DEVELOPER_ABOUT_P2, DEVELOPER_NAME, MENTORSHIP_ABOUT, MENTORSHIP_HEADER, blogs } from "../../constants";
 import CustomerReviews from "../../components/CustomerReviews/CustomerReviews";
@@ -33,9 +31,9 @@ const IntroductionSection: React.FC<{}> = () => {
       </Grid>
       
       <CustomerReviews/>
-      <GenericTextSection header={MENTORSHIP_HEADER} text={MENTORSHIP_ABOUT} />   
+      <GenericTextSection header={MENTORSHIP_HEADER} text={MENTORSHIP_ABOUT} shouldShowButton={true} buttonText="Book A Meeting" />   
       <BlogCards {...blogs}/>      
-      <GenericTextSection header={COMMUNITY_SECTION_HEADER} text={COMMUNITY_SECTION_TEXT} />
+      <GenericTextSection header={COMMUNITY_SECTION_HEADER} text={COMMUNITY_SECTION_TEXT} shouldShowButton={false}  />
       
     </Root>
   )
