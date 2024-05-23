@@ -18,7 +18,7 @@ export const Root = styled('div')(({ theme }) => ({
 export const BlogCard = styled(Paper)(({ theme }) => ({
   borderRadius: '20px !important',
   height: '300px',
-  padding: '30px',
+  padding: '10px 20px',
   // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
   // url(${Background})`,
   backgroundSize: 'cover', /* This ensures the image covers the entire background */
@@ -57,7 +57,7 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
   fontSize: '18px',
   fontFamily: 'MontserratHeaderBold',
   display: '-webkit-box',
-  WebkitLineClamp: 3,
+  WebkitLineClamp: 4,
   WebkitBoxOrient: 'vertical',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
@@ -66,7 +66,7 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '24px',
-    WebkitLineClamp: 3,
+    WebkitLineClamp: 4,
   },
 }));
 
@@ -89,28 +89,6 @@ export const BlogCardDate = styled(Box)(({ theme }) => ({
 export const BlogTextArea = styled(CardContent)(({ theme }) => ({
   padding: '20px !important',
 }));
-
-export const BlogCardContent = styled('div')(({ theme }) => ({
-    marginTop: '2vh',
-    fontFamily: 'MontserratStandardLight',
-    fontSize: '2vh',
-    fontWeight: 600,
-    letterSpacing: '1px',
-    flexGrow: 1,
-    display: '-webkit-box',
-    WebkitLineClamp: 7, // Limit to 5 lines
-    '-webkit-box-orient': 'vertical',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',  
-    [theme.breakpoints.between('sm', 'md')]: {
-      fontSize: '32px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      marginTop: '1vh',
-      fontSize: '0.7em',
-      WebkitLineClamp: 4,
-    },
-  }));
 
 export const BlogCardImage = styled(CardMedia)(({ theme }) => ({
     borderRadius: '18px 18px 0px 0px',
