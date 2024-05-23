@@ -69,7 +69,7 @@ export const DeveloperAbout = styled(Box)(({ theme }) => ({
     fontSize: '22px',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '16px',
+    fontSize: '18x',
   },
 }));
 

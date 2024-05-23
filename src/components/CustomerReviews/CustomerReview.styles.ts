@@ -19,7 +19,7 @@ export const Card = styled(Paper)(({ theme }) => ({
   borderRadius: '10px',
   [theme.breakpoints.down('sm')]: {
     width: 'unset',    
-    fontSize: '16px',
+    fontSize: '18px',
   },
 }));
 
