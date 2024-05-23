@@ -21,8 +21,6 @@ export const Root = styled(Container)(({ theme }) => ({
 }));
 
 export const DeveloperIntro = styled(Grid)(({ theme }) => ({
-  margin: 'auto!important',
-  padding: '30px!important',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'left',
@@ -33,7 +31,7 @@ export const DeveloperIntro = styled(Grid)(({ theme }) => ({
   //   // width: '60vw',
   // },
   [theme.breakpoints.down('sm')]: {
-    padding: '0px',
+    padding: '0px 5px',
     margin: '0px',
   },
 }));
@@ -87,12 +85,10 @@ export const ProfileHeadShot = styled(Grid)(({ theme }) => ({
     height: 'fit-content',
     textAlign: 'center',
     alignItems: 'center',
-    padding: '40px',    
+    padding: '40px', 
     [theme.breakpoints.down('sm')]: {
-      alignItems: 'center',
-      textAlign: 'center',
-      width: "100%",
-      padding: '0px', 
+      marginTop: '-2vh',
+      width: '100%',
     },
 }));
 
@@ -105,7 +101,7 @@ export const StyledImage = styled('img')(({ theme }) => ({
   // },
   [theme.breakpoints.down('sm')]: {
     // alignItems
-    maxWidth: '60vw',
+    maxWidth: '80%',
 
     // fontWeight: '400',
   },

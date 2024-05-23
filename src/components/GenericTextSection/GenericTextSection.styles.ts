@@ -8,9 +8,9 @@ export const Root = styled('div')(({ theme }) => ({
   [theme.breakpoints.between('sm', 'md')]: {
     textAlign: 'center',
   },
-  [theme.breakpoints.down('sm')]: {
-    // padding: '80px',
-  },
+  [theme.breakpoints.down('sm')]: {    
+    padding: '20px 5px!important',
+  }
 }));
 
 export const MentorshipImage = styled(Container)(({ theme }) => ({

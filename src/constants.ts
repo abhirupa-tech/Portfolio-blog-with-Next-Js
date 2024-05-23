@@ -8,7 +8,7 @@ export const DEVELOPER_ABOUT_P2 = "I also love mentoring early careerists, under
 export const MENTORSHIP_HEADER = "Get Your Resume reviewed, avail Mentoring Sessions and Mock Interviews to Boost your Career";
 export const MENTORSHIP_ABOUT = "Having experience interviewing for Micrsoft, Google and the likes, I am offering mentorship and mock interviews to aspiring engineers. I can help you with your technical skills and guide you through the process of becoming a successful engineer. Let’s me help you achieve your goals."
 export const COMMUNITY_SECTION_HEADER = "Join the Community!";
-export const COMMUNITY_SECTION_TEXT="Join my Community to get Free and Quick Access to everything Tech and Travel. Contribute and get Benefited at the Same Time. We are on Discord and Instagram."
+export const COMMUNITY_SECTION_TEXT="Join my Community to get Free and Quick Access to everything Tech and Travel. Contribute and get Benefited at the Same Time. Follow me on Instagram and Linkedin!."
 
 export const reviews : CustomerReviewCard[] =[
     {

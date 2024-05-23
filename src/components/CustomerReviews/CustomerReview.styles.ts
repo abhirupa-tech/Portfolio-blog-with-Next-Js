@@ -4,6 +4,9 @@ import { Box, Grid, Paper } from '@mui/material';
 export const Root = styled(Grid)(({ theme }) => ({
   margin: 'auto!important',
   padding: '20px!important',
+  [theme.breakpoints.down('sm')]: {    
+    padding: '40px 0px!important',
+  }
 }));
 
 export const Card = styled(Paper)(({ theme }) => ({
@@ -12,7 +15,9 @@ export const Card = styled(Paper)(({ theme }) => ({
   fontSize: '18px',
   borderRadius: '10px',
   [theme.breakpoints.down('sm')]: {
-    width: 'unset',
+    width: 'unset',    
+    fontSize: '16px',    
+    // padding: '20px',
   },
 }));
 
