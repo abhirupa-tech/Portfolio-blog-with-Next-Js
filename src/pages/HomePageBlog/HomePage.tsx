@@ -31,7 +31,7 @@ const IntroductionSection: React.FC<{}> = () => {
       </Grid>
       
       <CustomerReviews/>
-      <GenericTextSection header={MENTORSHIP_HEADER} text={MENTORSHIP_ABOUT} shouldShowButton={true} buttonText="Book A Meeting" />   
+      <GenericTextSection header={MENTORSHIP_HEADER} text={MENTORSHIP_ABOUT} shouldShowButton={true} buttonRedirectionLink = "https://topmate.io/abhirupa_mitra" buttonText="Book A Meeting" />   
       <BlogCards {...blogs}/>      
       <GenericTextSection header={COMMUNITY_SECTION_HEADER} text={COMMUNITY_SECTION_TEXT} shouldShowButton={false}  />
       

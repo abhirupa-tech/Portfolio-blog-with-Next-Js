@@ -9,7 +9,10 @@ export const Root = styled('div')(({ theme }) => ({
   padding: '20px!important',  
   [theme.breakpoints.down('sm')]: {    
     padding: '40px 0px!important',
-  }
+  },
+  [theme.breakpoints.between('sm', 'md')]: {
+    padding: '40px 0px!important',
+  },
 }));
 
 export const BlogCard = styled(Paper)(({ theme }) => ({
@@ -33,8 +36,6 @@ export const BlogCard = styled(Paper)(({ theme }) => ({
     height: '300px',
     padding: '0px',
     marginTop: '10px',
-    // backgroundImage: `linear-gradient(rgba(200, 200, 0, 0.2), rgba(0, 0, 0, 0)),
-    // url(${Background})`,
   },
 }));
 
@@ -61,9 +62,7 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   [theme.breakpoints.between('sm', 'md')]: {
-    // fontSize: '3vh',
-    // lineHeight: '1.2em',
-    // WebkitLineClamp: 3,
+    fontSize: '32px',
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '24px',
@@ -76,7 +75,7 @@ export const BlogCardDate = styled(Box)(({ theme }) => ({
   margin: '10px 0px',
   fontFamily: 'MontserratStandardLight',
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '3vh',
+    fontSize: '22px',
     lineHeight: '1.2em',
     WebkitLineClamp: 3,
   },
@@ -104,9 +103,7 @@ export const BlogCardContent = styled('div')(({ theme }) => ({
     overflow: 'hidden',
     textOverflow: 'ellipsis',  
     [theme.breakpoints.between('sm', 'md')]: {
-        marginTop: '20px',
-        fontSize: '2vh',
-        WebkitLineClamp: 6,
+      fontSize: '32px',
     },
     [theme.breakpoints.down('sm')]: {
       marginTop: '1vh',

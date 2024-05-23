@@ -10,10 +10,10 @@ export const Root = styled(Container)(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
     padding: "30px 150px!important",
   },
-  // [theme.breakpoints.down('md')]: {
-    //   // fontSize: '1.2em',
-    //   // width: '60vw',
-    // },
+  [theme.breakpoints.between('sm', 'md')]: {
+    maxWidth: "80vw",    
+    padding: "30px 100px!important",
+  },
   [theme.breakpoints.down('sm')]: {
     padding: "20px",
     height: 'fit-content',
@@ -54,28 +54,20 @@ export const DeveloperName = styled(Box)(({ theme }) => ({
   lineHeight: 'normal',
   textAlign: 'left',
   width: '90%',
-  fontSize: '25px',
-  // [theme.breakpoints.between('sm', 'md')]: {
-  //   fontSize: '8vh',
-  //   letterSpacing: '-0.1vh',
-  //   marginTop: '5vh',
-  // },
-  // [theme.breakpoints.down('sm')]: {
-  //   fontSize: '3em',
-  //   letterSpacing: '0px',
-  //   height: 'fit-content'
-  // },
+  fontSize: '25px',   
+  [theme.breakpoints.between('sm', 'md')]: {
+    fontSize: '28px',
+  },
 }));
 
 export const DeveloperAbout = styled(Box)(({ theme }) => ({
   color: '#000000',
   fontSize: '18px',
   display: 'inline-block',
-  textAlign: 'left',
-  // [theme.breakpoints.between('sm', 'md') ]: {
-  //   fontSize: '2.5vh',
-  //   width: '80vw',
-  // },
+  textAlign: 'left',  
+  [theme.breakpoints.between('sm', 'md')]: {
+    fontSize: '22px',
+  },
   [theme.breakpoints.down('sm')]: {
     fontSize: '16px',
   },
@@ -96,14 +88,12 @@ export const ProfileHeadShot = styled(Grid)(({ theme }) => ({
 export const StyledImage = styled('img')(({ theme }) => ({
   maxWidth: '250px',
   height: 'auto',
-  // [theme.breakpoints.between('sm', 'md')]: {
-  //   maxWidth: '40vw',
-  // },
   [theme.breakpoints.down('sm')]: {
     // alignItems
     maxWidth: '80%',
-
-    // fontWeight: '400',
+  }, 
+  [theme.breakpoints.between('sm', 'md')]: {
+    maxWidth: '280px',
   },
 }));
 

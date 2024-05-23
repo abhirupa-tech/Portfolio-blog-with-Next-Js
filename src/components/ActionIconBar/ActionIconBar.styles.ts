@@ -19,7 +19,7 @@ export const Icon = styled(IconButton)(({ theme }) => ({
       height: '40px',
     },
     [theme.breakpoints.between('sm', 'md')]: {
-      height: '7vh',
+      height: '60px',
     },
     [theme.breakpoints.down('sm')]: {
       padding: '0px 8px',

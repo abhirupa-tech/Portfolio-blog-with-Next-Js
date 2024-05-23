@@ -12,7 +12,7 @@ export const Root = styled('div')(({ theme }) => ({
     top: 0,
     [theme.breakpoints.between('sm', 'md')]: {
         color: 'smokewhite',
-        fontSize: '2vh',
+        fontSize: '22px',
         padding: '3vh 0vw',
     },
    [theme.breakpoints.down('sm')]: {

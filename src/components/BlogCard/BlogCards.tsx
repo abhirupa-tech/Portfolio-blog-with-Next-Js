@@ -40,7 +40,7 @@ const BlogCards: React.FC<Blogs> = ({
           <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
             {/* {blogUrl = blog.imageUrl ?? ""}
             {console.log("URL:", blogUrl, "index:", index)}; */}
-            <BlogCard onClick={() => {handleBlogCardOnClick(blog.redirectionLink ?? "")}} elevation={2} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${blogUrl[index] ?? ""})`}}>
+            <BlogCard onClick={() => {handleBlogCardOnClick(blog.redirectionLink ?? "")}} elevation={2} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(${blogUrl[index] ?? ""})`}}>
               <BlogContent>
                 <BlogCardHeader>{blog.title}</BlogCardHeader>
                 <BlogCardDate>{blog.date}</BlogCardDate>

@@ -6,7 +6,8 @@ export const Root = styled('div')(({ theme }) => ({
   padding: '30px',
   maxWidth: '600px',
   [theme.breakpoints.between('sm', 'md')]: {
-    textAlign: 'center',
+    textAlign: 'left',
+    padding: '0px',
   },
   [theme.breakpoints.down('sm')]: {    
     padding: '20px 5px!important',
@@ -22,8 +23,8 @@ export const MentorshipHeader = styled('div')(({ theme }) => ({
   fontFamily: 'MontserratHeaderBold',
   fontSize: '28px',
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '6vh',
-    lineHeight: '7vh',
+    fontSize: '28px',
+    // lineHeight: '7vh',
   },
   [theme.breakpoints.down('sm')]: {
     // marginTop: '2vh',
@@ -40,8 +41,7 @@ export const MentorshipAbout = styled('div')(({ theme }) => ({
   fontSize: '18px',
   marginBottom: '30px',
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '2.5vh',
-    lineHeight: '4vh',
+    fontSize: '22px',
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '18px',

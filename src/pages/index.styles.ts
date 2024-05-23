@@ -61,11 +61,8 @@ export const MaterialButton = styled(Button)(({ theme }) => ({
     transition: 'all 0.2s ease-in-out',
   },  
   [theme.breakpoints.up('sm') && theme.breakpoints.down('md')]: {
-    fontSize: '2.5vh',
-    fontWeight: 400,
-    marginTop: '8vh', 
-    borderRadius: '1.2em',   
-    padding: '1.5vh 4vh',
+    fontSize: '18px',
+    padding: '10px 22px',
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '14px',

@@ -17,11 +17,16 @@ const GenericTextSection: React.FC<GenericTextSection> = ({
   buttonRedirectionLink,
 }) => {
 
+  const redirect = () => {
+    console.log("Button Clicked!");
+    window.open(buttonRedirectionLink);
+  }
+
   return (
     <Root>
         <MentorshipHeader>{header}</MentorshipHeader>
         <MentorshipAbout>{text}</MentorshipAbout>
-        {shouldShowButton && <MaterialButton>{buttonText}</MaterialButton>}
+        {shouldShowButton && <MaterialButton onClick={() => {redirect()}}>{buttonText}</MaterialButton>}
     </Root>
   )
 }

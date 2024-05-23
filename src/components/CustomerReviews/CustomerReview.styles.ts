@@ -6,7 +6,10 @@ export const Root = styled(Grid)(({ theme }) => ({
   padding: '20px!important',
   [theme.breakpoints.down('sm')]: {    
     padding: '40px 0px!important',
-  }
+  },
+  [theme.breakpoints.between('sm', 'md')]: {   
+    padding: '40px 0px!important',
+  },
 }));
 
 export const Card = styled(Paper)(({ theme }) => ({
@@ -16,8 +19,7 @@ export const Card = styled(Paper)(({ theme }) => ({
   borderRadius: '10px',
   [theme.breakpoints.down('sm')]: {
     width: 'unset',    
-    fontSize: '16px',    
-    // padding: '20px',
+    fontSize: '16px',
   },
 }));
 
