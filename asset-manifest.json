@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.bb048805.chunk.js",
-    "main.js.map": "/static/js/main.bb048805.chunk.js.map",
+    "main.js": "/static/js/main.8ee66c87.chunk.js",
+    "main.js.map": "/static/js/main.8ee66c87.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.29095137.js",
     "runtime~main.js.map": "/static/js/runtime~main.29095137.js.map",
     "static/js/2.4dd23cbe.chunk.js": "/static/js/2.4dd23cbe.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1c0e3102.chunk.js": "/static/js/3.1c0e3102.chunk.js",
     "static/js/3.1c0e3102.chunk.js.map": "/static/js/3.1c0e3102.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fd8fe3485713c99c4726de505d34d5f9.js": "/precache-manifest.fd8fe3485713c99c4726de505d34d5f9.js",
+    "precache-manifest.779e25e3941086e723384753af16c19a.js": "/precache-manifest.779e25e3941086e723384753af16c19a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
     "static/media/AbrilFatface-Regular.ttf": "/static/media/AbrilFatface-Regular.738419c3.ttf",
