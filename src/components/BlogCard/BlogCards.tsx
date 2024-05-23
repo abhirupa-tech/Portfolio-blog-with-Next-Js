@@ -37,7 +37,7 @@ const BlogCards: React.FC<Blogs> = ({
         spacing={4}
       >
         {Array.from(blogs).map((blog, index) => (
-          <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
+          <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
             {/* {blogUrl = blog.imageUrl ?? ""}
             {console.log("URL:", blogUrl, "index:", index)}; */}
             <BlogCard onClick={() => {handleBlogCardOnClick(blog.redirectionLink ?? "")}} elevation={2} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(${blogUrl[index] ?? ""})`}}>
