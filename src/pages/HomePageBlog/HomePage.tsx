@@ -1,12 +1,14 @@
-import * as React from "react"
-import {DeveloperName, Root, DeveloperAbout, StyledImage, DeveloperIntro, ProfileHeadShot} from "./homepage.styles";
-import ProfilePicture from "../../images/ProfilePicture.png";
 import Grid from '@mui/material/Grid';
+import * as React from "react";
 import ActionIconBar from "../../components/ActionIconBar/ActionIconBar";
-import { COMMUNITY_SECTION_HEADER, COMMUNITY_SECTION_TEXT, DEVELOPER_ABOUT_P1, DEVELOPER_ABOUT_P2, DEVELOPER_NAME, MENTORSHIP_ABOUT, MENTORSHIP_HEADER, blogs } from "../../constants";
-import CustomerReviews from "../../components/CustomerReviews/CustomerReviews";
 import BlogCards from "../../components/BlogCard/BlogCards";
+import CustomerReviews from "../../components/CustomerReviews/CustomerReviews";
 import GenericTextSection from "../../components/GenericTextSection/GenericTextSection";
+import PortfolioProjects from "../../components/PortfolioProjects/PortfolioProjects";
+import { COMMUNITY_SECTION_HEADER, COMMUNITY_SECTION_TEXT, DEVELOPER_ABOUT_P1, DEVELOPER_ABOUT_P2, DEVELOPER_NAME, MENTORSHIP_ABOUT, MENTORSHIP_HEADER, RESEARCH_SECTION_HEADER, RESEARCH_SECTION_TEXT, blogs, projects, research } from "../../constants";
+import ProfilePicture from "../../images/ProfilePicture.png";
+import { DeveloperAbout, DeveloperIntro, DeveloperName, ProfileHeadShot, Root, StyledImage } from "./homepage.styles";
+import Research from '../../components/ResearchSection/Research';
 
 const IntroductionSection: React.FC<{}> = () => {
   const handleMeetingBookingClick = () => {
@@ -33,6 +35,8 @@ const IntroductionSection: React.FC<{}> = () => {
       <CustomerReviews/>
       <GenericTextSection header={MENTORSHIP_HEADER} text={MENTORSHIP_ABOUT} shouldShowButton={true} buttonRedirectionLink = "https://topmate.io/abhirupa_mitra" buttonText="Book A Meeting" />   
       <BlogCards {...blogs}/>      
+      <GenericTextSection header={RESEARCH_SECTION_HEADER} text={RESEARCH_SECTION_TEXT} shouldShowButton={false}  />
+      <PortfolioProjects {...projects}/>
       <GenericTextSection header={COMMUNITY_SECTION_HEADER} text={COMMUNITY_SECTION_TEXT} shouldShowButton={false}  />
       
     </Root>

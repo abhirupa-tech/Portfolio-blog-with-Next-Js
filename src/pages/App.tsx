@@ -14,7 +14,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>  
       <Body>
-          <GlobalStyle />          
+          <GlobalStyle />
           <Navbar/>
           <IntroductionSection />
           <FooterSection />
