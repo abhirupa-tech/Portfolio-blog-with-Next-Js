@@ -27,7 +27,6 @@ export const BlogCard = styled(Paper)(({ theme }) => ({
 }));
 
 export const BlogContent = styled(Box)(({ theme }) => ({
-    color: 'black',
     marginTop: '20px',
     [theme.breakpoints.down('sm')]: {
         fontSize: '3vh',
@@ -44,11 +43,15 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
     overflow: 'hidden',
     WebkitBoxOrient: 'vertical',
     WebkitLineClamp: 3,
+    lineHeight: '25px',
+    color: '#4d4d4d',
     [theme.breakpoints.between('sm', 'md')]: {
-        fontSize: '26px',
+        fontSize: '22px',
+        lineHeight: '26px',
     },
     [theme.breakpoints.down('sm')]: {
         fontSize: '22px',
+        lineHeight: '1.4em',
     },
 }));
 
@@ -89,5 +92,24 @@ export const Header = styled('div')(({ theme }) => ({
         fontSize: '24px',
         margin: '2vh 0vh 2vh 0vh',
         padding: '0px',
+    },
+}));
+
+export const SourceLink = styled('a')(({ theme }) => ({
+    fontSize: '18px',
+    margin: '10px 0px',
+    display: '-webkit-box',
+    overflow: 'hidden',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 5,
+    trimEnd: true,
+
+    [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '22px',
+        lineHeight: '1.2em',
+    },
+    [theme.breakpoints.down('sm')]: {
+        fontSize: '18px',
+        lineHeight: '1.3em',
     },
 }));
