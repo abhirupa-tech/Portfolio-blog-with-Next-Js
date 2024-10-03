@@ -36,6 +36,11 @@ export const blogs : Blogs = {
         title: "Building Visually Accessible Websites by Supporting Contrast Theming",
         date: "May 4, 2024",
         redirectionLink : "https://medium.com/@mitra.abhirupa/building-visually-accessible-websites-by-supporting-contrast-theming-300cd2f603b9",
+    },
+    {
+        title: "Optimize your ReactJS Application for Performance and Size",
+        date: "Oct 1, 2024",
+        redirectionLink : "https://medium.com/@mitra.abhirupa/optimize-your-reactjs-application-for-performance-and-size-686f89889723",
     }]
 }
 

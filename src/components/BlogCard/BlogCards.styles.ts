@@ -62,7 +62,7 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '32px',
+    fontSize: '22px',
   },
   [theme.breakpoints.down('sm')]: {
     fontSize: '24px',

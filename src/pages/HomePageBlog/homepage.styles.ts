@@ -1,4 +1,4 @@
-import { styled } from '@mui/material/styles';
+import { styled } from '@mui/system';
 import { Box, Container, Grid, Theme } from '@mui/material';
 import { Col } from 'react-grid-system';
 

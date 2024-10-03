@@ -1,9 +1,9 @@
-import * as React from "react"
-import {Root, BlogCard, BlogCardDate, BlogCardHeader, BlogContent} from "./BlogCards.styles";
 import { Grid } from "@mui/material";
-import { useTheme, useMediaQuery } from '@mui/material/';
+import * as React from "react";
 import Background from './../../images/blogImage.jpg';
 import Background2 from './../../images/blogImg2.jpg';
+import Background3 from './../../images/blogbg3.jpg';
+import { BlogCard, BlogCardDate, BlogCardHeader, BlogContent, Root } from "./BlogCards.styles";
 
 
 export interface BlogData {
@@ -21,7 +21,7 @@ const BlogCards: React.FC<Blogs> = ({
   blogs,  
 }) => {
 
-  const blogUrl = [Background, Background2];
+  const blogUrl = [Background, Background2, Background3];
 
   const handleBlogCardOnClick = (url : string) => {
     console.log("Blog Crad Clicked");
