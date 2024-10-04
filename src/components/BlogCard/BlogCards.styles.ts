@@ -1,5 +1,4 @@
 import { CardContent, CardMedia, Button, Box, Paper } from '@mui/material';
-import BlogImage from '../../images/blog3img.jpg';
 import { styled } from '@mui/material/styles';
 import Background from './../../images/blogImage.jpg';
 
@@ -98,7 +97,7 @@ export const BlogCardImage = styled(CardMedia)(({ theme }) => ({
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    image: `url(${BlogImage})`,
+    image: `url(${Background})`,
     alt: "Static Image",    
     component: "img",
     [theme.breakpoints.between('sm', 'md')]: {

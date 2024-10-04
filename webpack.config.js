@@ -5,7 +5,11 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 module.exports = {
   entry: './src/index.tsx',  // Entry point for your application
   plugins: [
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static', // Generates a static HTML file
+      openAnalyzer: false, // Prevents the report from opening automatically
+      reportFilename: 'bundle-report.html' // Name of the report file
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html', // Path to your HTML template
       filename: 'index.html', // Output HTML file name
