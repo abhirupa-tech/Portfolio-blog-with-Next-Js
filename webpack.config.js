@@ -17,9 +17,9 @@ module.exports = {
     }),
   ],
   output: {
-    filename: '[name].bundle.js',  // Output bundle file
-    path: path.resolve(__dirname, 'dist'),  // Directory for the bundle
-    clean: true, // This will clear the output directory before each build
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'docs'),  // Change to 'docs'
+    clean: true,  // Clears 'docs' before every build
   },
 
   resolve: {
