@@ -12,7 +12,9 @@ export const COMMUNITY_SECTION_HEADER = "Join the Community!";
 export const COMMUNITY_SECTION_TEXT="Join my Community to get Free and Quick Access to everything Tech and Travel. Contribute and get Benefited at the Same Time. Follow me on Instagram and Linkedin!."
 
 export const RESEARCH_SECTION_HEADER = "Research And Publications";
-export const RESEARCH_SECTION_TEXT="My areas of Research involve around Machine Learning, Linguistics and Software Development. Checkout my Google Scholar page here."
+export const RESEARCH_SECTION_TEXT=`My notable works include "Securing Organ Donation using Blockchain," published in the International Journal of Scientific & Engineering Research, which explores the use of blockchain technology to enhance the security and transparency of organ donation processes.
+
+Another significant contribution is my comparative study on classification algorithms for predicting diabetes mellitus, published in the Journal of Innovation in Electronics and Communication Engineering.Additionally, I have worked on optimizing size for intent analysis in voice commanding, showcasing my versatility and expertise in various technological domains.`;
 
 export const reviews : CustomerReviewCard[] =[
     {

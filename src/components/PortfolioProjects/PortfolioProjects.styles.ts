@@ -42,7 +42,7 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
     display: '-webkit-box',
     overflow: 'hidden',
     WebkitBoxOrient: 'vertical',
-    WebkitLineClamp: 3,
+    WebkitLineClamp: 2,
     lineHeight: '25px',
     color: '#4d4d4d',
     [theme.breakpoints.between('sm', 'md')]: {
@@ -61,7 +61,7 @@ export const BlogCardDescription = styled(Box)(({ theme }) => ({
     display: '-webkit-box',
     overflow: 'hidden',
     WebkitBoxOrient: 'vertical',
-    WebkitLineClamp: 5,
+    WebkitLineClamp: 4,
     trimEnd: true,
 
     [theme.breakpoints.between('sm', 'md')]: {

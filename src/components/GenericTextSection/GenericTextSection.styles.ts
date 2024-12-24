@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 
 // Define your styled components using MUI's styled utility
 export const Root = styled('div')(({ theme }) => ({
-  padding: '30px',
+  padding: '20px',
   maxWidth: '100%',
   [theme.breakpoints.between('sm', 'md')]: {
     textAlign: 'left',
