@@ -30,18 +30,24 @@ export const blogs : Blogs = {
     [{
         title: "Create Simplified Parallax Effects Using Next.js + GSAP",
         date: "May 16, 2024",
-        redirectionLink : "https://medium.com/codex/create-simplified-parallax-effects-using-next-js-gsap-in-10-mins-82d4d60cd15f",
+        redirectionLink : "https://dev.to/abhirupa/create-simplified-parallax-effects-using-nextjs-gsap-1epg",
     },
     {
         title: "Building Visually Accessible Websites by Supporting Contrast Theming",
         date: "May 4, 2024",
-        redirectionLink : "https://medium.com/@mitra.abhirupa/building-visually-accessible-websites-by-supporting-contrast-theming-300cd2f603b9",
+        redirectionLink : "https://dev.to/abhirupa/building-visually-accessible-websites-by-supporting-contrast-theming-420h",
     },
     {
-        title: "Optimize your ReactJS Application for Performance and Size",
+        title: "Quick Optimization for your ReactJS Application for Performance and Size",
         date: "Oct 1, 2024",
-        redirectionLink : "https://medium.com/@mitra.abhirupa/optimize-your-reactjs-application-for-performance-and-size-686f89889723",
-    }]
+        redirectionLink : "https://dev.to/abhirupa/quick-optimization-for-your-reactjs-application-for-performance-and-size-378k",
+    },
+    {
+        title: "The art of Smooth UX : Debouncing and Throttling for a more performant UI",
+        date: "Dec 12, 2024",
+        redirectionLink : "https://dev.to/abhirupa/the-art-of-smooth-ux-debouncing-and-throttling-for-a-more-performant-ui-m0h"
+    }
+]
 }
 
 export const projects : Projects = {

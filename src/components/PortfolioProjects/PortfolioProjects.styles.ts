@@ -95,21 +95,28 @@ export const Header = styled('div')(({ theme }) => ({
     },
 }));
 
-export const SourceLink = styled('a')(({ theme }) => ({
+export const SourceLink = styled('button')(({ theme }) => ({
     fontSize: '18px',
     margin: '10px 0px',
-    display: '-webkit-box',
-    overflow: 'hidden',
-    WebkitBoxOrient: 'vertical',
-    WebkitLineClamp: 5,
-    trimEnd: true,
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+    backgroundColor: '#3498db', // Modern blue color
+    color: '#fff',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+
+    '&:hover': {
+        backgroundColor: '#2980b9', // Darker blue on hover
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Minimalist shadow
+    },
 
     [theme.breakpoints.between('sm', 'md')]: {
         fontSize: '22px',
-        lineHeight: '1.2em',
+        padding: '12px 24px',
     },
     [theme.breakpoints.down('sm')]: {
         fontSize: '18px',
-        lineHeight: '1.3em',
+        padding: '10px 20px',
     },
 }));

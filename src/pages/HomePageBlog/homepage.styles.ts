@@ -11,7 +11,7 @@ export const Root = styled(Container)(({ theme }) => ({
     padding: "30px 150px!important",
   },
   [theme.breakpoints.between('sm', 'md')]: {
-    maxWidth: "80vw",    
+    maxWidth: "100vw",    
     padding: "30px 100px!important",
   },
   [theme.breakpoints.down('sm')]: {

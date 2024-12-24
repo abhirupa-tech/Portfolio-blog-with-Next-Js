@@ -1,9 +1,10 @@
 import { Grid } from "@mui/material";
 import * as React from "react";
-import MicrosoftCopilot from './../../images/MicrosoftCopilot.png';
+import MicrosoftCopilot from './../../images/copilot.jpg';
 import TwitterEgo from './../../images/TwitterEgo.jpg';
-import Background2 from './../../images/blogImg2.jpg';
+import Background2 from './../../images/carbonEmission.jpg';
 import { BlogCard, BlogCardDescription, BlogCardHeader, BlogContent, Header, Root, SourceLink } from "./PortfolioProjects.styles";
+import { MaterialButton } from "../../pages/index.styles";
 
 
 export interface ProjectData {
@@ -22,7 +23,7 @@ const projectImages = [MicrosoftCopilot, TwitterEgo, Background2];
 
 const PortfolioProjects: React.FC<Projects> = ({ projects }) => {
 
-	const handleProjectOnClick = (url : string) => {
+	const handleProjectOnClick = (url : string | undefined) => {
 		console.log("Project Card Clicked");
 		window.open(url);
 	}
@@ -41,7 +42,7 @@ const PortfolioProjects: React.FC<Projects> = ({ projects }) => {
 					<BlogContent>
 						<BlogCardHeader>{project?.title}</BlogCardHeader>
 						<BlogCardDescription>{project?.description}</BlogCardDescription>
-						<SourceLink href={project?.redirectionLink}>Source Code</SourceLink>
+						<MaterialButton onClick={() => {handleProjectOnClick(project?.redirectionLink)}}>View Project</MaterialButton>
 					</BlogContent>
 				</Grid>
 			))}

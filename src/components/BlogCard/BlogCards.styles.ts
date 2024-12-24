@@ -1,6 +1,6 @@
-import { CardContent, CardMedia, Button, Box, Paper } from '@mui/material';
+import { LineWeight } from '@mui/icons-material';
+import { Box, Button, CardContent, CardMedia, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import Background from './../../images/blogImage.jpg';
 
 
 
@@ -14,36 +14,46 @@ export const Root = styled('div')(({ theme }) => ({
   },
 }));
 
-export const BlogCard = styled(Paper)(({ theme }) => ({
+export const Card = styled('div')(({ theme }) => ({
   borderRadius: '20px !important',
-  height: '300px',
-  padding: '10px 20px',
-  // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-  // url(${Background})`,
-  backgroundSize: 'cover', /* This ensures the image covers the entire background */
-  backgroundRepeat: 'no-repeat', /* Prevents repetition of the image */
-  position: 'relative',  
+  boxShadow: '0 2px 2px rgba(0, 0, 0, 0.1)',
   '&:hover': {
     cursor: 'pointer',    
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
-    url(${Background})`,
-    // backgroundSize: 'cover',
-    // backgroundRepeat: 'no-repeat',
-    transition: 'all 1s ease',
+    boxShadow: '2px 3px 4px rgba(0, 0, 0, 0.2)',
+    transition: 'all 0.2s ease',
   },  
+}));
+
+
+export const BlogCardImage = styled(CardMedia)(({ theme }) => ({
+  height: '200px',
+  borderRadius: '20px 20px 0px 0px',
+  
+  [theme.breakpoints.between('sm', 'md')]: {
+    height: '130px',
+  },
+}));
+
+
+export const BlogCard = styled(Paper)(({ theme }) => ({  
+  boxShadow: 'none',
+  height: '130px',  
+  padding: '10px 20px',
+  borderRadius: '0px 0px 20px 20px',
+
   [theme.breakpoints.down('sm')]: {
-    height: '300px',
-    padding: '0px',
+    padding: '10px 20px',
     marginTop: '10px',
+    height: '130px', 
   },
 }));
 
 export const BlogContent = styled(Box)(({ theme }) => ({  
-  position: 'absolute',
-  bottom: '20',
-  left: '30',
-  right: '30' ,
-  color: 'whitesmoke',
+  // position: 'absolute',
+  // bottom: '20',
+  // left: '30',
+  // right: '30' ,
+  color: 'black',
   [theme.breakpoints.down('sm')]: {
     fontSize: '3vh',
     lineHeight: '1.2em',
@@ -59,12 +69,13 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
   WebkitLineClamp: 4,
   WebkitBoxOrient: 'vertical',
   overflow: 'hidden',
-  textOverflow: 'ellipsis',
+  textOverflow: 'ellipsis',  
+  color: '#545454',
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '22px',
+    fontSize: '20px',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '24px',
+    fontSize: '20px',
     WebkitLineClamp: 4,
   },
 }));
@@ -74,40 +85,18 @@ export const BlogCardDate = styled(Box)(({ theme }) => ({
   margin: '10px 0px',
   fontFamily: 'MontserratStandardLight',
   [theme.breakpoints.between('sm', 'md')]: {
-    fontSize: '22px',
+    fontSize: '15px',
     lineHeight: '1.2em',
     WebkitLineClamp: 3,
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '18px',
-    // lineHeight: '20px',
-    // WebkitLineClamp: 3,
+    fontSize: '15px',
+    lineHeight: '20px',
   },
 }));
 
 export const BlogTextArea = styled(CardContent)(({ theme }) => ({
   padding: '20px !important',
-}));
-
-export const BlogCardImage = styled(CardMedia)(({ theme }) => ({
-    borderRadius: '18px 18px 0px 0px',
-    height: '30vh',
-    order: -1,
-    display: 'block',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    image: `url(${Background})`,
-    alt: "Static Image",    
-    component: "img",
-    [theme.breakpoints.between('sm', 'md')]: {
-        component: "img",
-        height: "20vh",
-    },
-    [theme.breakpoints.down('sm')]: {
-        component: "img",
-        height: "20vh",
-    },
 }));
 
 export const MobileBlogCardImage = styled(CardMedia)(({ theme }) => ({
