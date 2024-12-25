@@ -3,8 +3,8 @@ import * as React from "react";
 import MicrosoftCopilot from './../../images/copilot.jpg';
 import TwitterEgo from './../../images/TwitterEgo.jpg';
 import Background2 from './../../images/carbonEmission.jpg';
-import { BlogCard, BlogCardDescription, BlogCardHeader, BlogContent, Header, Root, SourceLink } from "./PortfolioProjects.styles";
-import { MaterialButton } from "../../pages/index.styles";
+import { BlogCard, BlogCardDescription, BlogCardHeader, BlogContent, Card, Header, Root } from "./PortfolioProjects.styles";
+import { MaterialButton, MaterialButtonMini } from "../../pages/index.styles";
 
 
 export interface ProjectData {
@@ -38,12 +38,14 @@ const PortfolioProjects: React.FC<Projects> = ({ projects }) => {
 		>
 			{Array.from(projects).map((project, index) => (
 				<Grid item xs={12} sm={6} md={4} lg={4} key={index}>
-					<BlogCard style={{ backgroundImage: `url(${projectImages[index] ?? ""})`}}/>
-					<BlogContent>
-						<BlogCardHeader>{project?.title}</BlogCardHeader>
-						<BlogCardDescription>{project?.description}</BlogCardDescription>
-						<MaterialButton onClick={() => {handleProjectOnClick(project?.redirectionLink)}}>View Project</MaterialButton>
-					</BlogContent>
+					<Card>
+						<BlogCard style={{ backgroundImage: `url(${projectImages[index] ?? ""})`}}/>
+						<BlogContent>
+							<BlogCardHeader>{project?.title}</BlogCardHeader>
+							<BlogCardDescription>{project?.description}</BlogCardDescription>
+							<MaterialButtonMini onClick={() => {handleProjectOnClick(project?.redirectionLink)}}>View Project</MaterialButtonMini>
+						</BlogContent>
+					</Card>
 				</Grid>
 			))}
 		</Grid>

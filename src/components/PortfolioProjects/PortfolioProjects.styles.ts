@@ -13,8 +13,24 @@ export const Root = styled('div')(({ theme }) => ({
     },
 }));
 
-export const BlogCard = styled(Paper)(({ theme }) => ({
+export const Card = styled(Paper)(({ theme }) => ({    
     borderRadius: '20px !important',
+    boxShadow: '0 2px 2px rgba(0, 0, 0, 0.1)',
+
+    [theme.breakpoints.down('sm')]: {
+        boxShadow: 'none',
+        border: '1px solid #c8c8c8',
+        margin: '0px'
+    },
+    // '&:hover': {
+    //     cursor: 'pointer',    
+    //     boxShadow: '2px 4px 5px rgba(0, 0, 0, 0.3)',
+    //     transition: 'all 0.15s ease',
+    // }
+}));
+
+export const BlogCard = styled(Paper)(({ theme }) => ({
+    borderRadius: '20px 20px 0px 0px !important',
     height: '150px',
     padding: '10px 20px',
     backgroundSize: 'cover', /* This ensures the image covers the entire background */
@@ -22,41 +38,40 @@ export const BlogCard = styled(Paper)(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
         height: '150px',
         padding: '0px',
-        marginTop: '10px',
     },
 }));
 
 export const BlogContent = styled(Box)(({ theme }) => ({
-    marginTop: '20px',
+    marginTop: '10px',
+    padding: '10px 15px',
+    fontFamily: 'MontserratRegular',
     [theme.breakpoints.down('sm')]: {
-        fontSize: '3vh',
-        lineHeight: '1em',
+        fontSize: '15px',
         WebkitLineClamp: 3,
         bottom: '40',
-    },
+    },    
 }));
 
 export const BlogCardHeader = styled(Box)(({ theme }) => ({
-    fontSize: '18px',
+    fontSize: '16px',
     fontFamily: 'MontserratHeaderBold',
     display: '-webkit-box',
     overflow: 'hidden',
     WebkitBoxOrient: 'vertical',
     WebkitLineClamp: 2,
-    lineHeight: '25px',
+    lineHeight: '20px',
     color: '#4d4d4d',
     [theme.breakpoints.between('sm', 'md')]: {
         fontSize: '22px',
         lineHeight: '26px',
     },
     [theme.breakpoints.down('sm')]: {
-        fontSize: '22px',
+        fontSize: '17px',
         lineHeight: '1.4em',
     },
 }));
 
 export const BlogCardDescription = styled(Box)(({ theme }) => ({
-    fontSize: '18px',
     margin: '10px 0px',
     display: '-webkit-box',
     overflow: 'hidden',
@@ -65,12 +80,16 @@ export const BlogCardDescription = styled(Box)(({ theme }) => ({
     trimEnd: true,
 
     [theme.breakpoints.between('sm', 'md')]: {
-        fontSize: '22px',
-        lineHeight: '1.2em',
+        fontSize: '18px',
+        lineHeight: '23px',
     },
     [theme.breakpoints.down('sm')]: {
-        fontSize: '18px',
-        lineHeight: '1.3em',
+        fontSize: '15px',
+        lineHeight: '20px',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '14px',
+        lineHeight: '20px',
     },
 }));
 

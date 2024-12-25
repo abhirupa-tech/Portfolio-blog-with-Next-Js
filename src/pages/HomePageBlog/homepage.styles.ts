@@ -62,14 +62,19 @@ export const DeveloperName = styled(Box)(({ theme }) => ({
 
 export const DeveloperAbout = styled(Box)(({ theme }) => ({
   color: '#000000',
-  fontSize: '18px',
+  fontFamily: 'MontserratRegular',
   display: 'inline-block',
   textAlign: 'left',  
   [theme.breakpoints.between('sm', 'md')]: {
     fontSize: '22px',
   },
   [theme.breakpoints.down('sm')]: {
+    fontSize: '14x',    
+    lineHeight: '20px',
+  },  
+  [theme.breakpoints.up('md')]: {
     fontSize: '18x',
+    lineHeight: '23px',
   },
 }));
 

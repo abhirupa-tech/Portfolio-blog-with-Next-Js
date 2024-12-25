@@ -15,11 +15,15 @@ export const Root = styled(Grid)(({ theme }) => ({
 export const Card = styled(Paper)(({ theme }) => ({
   width: '350px',
   padding: '20px',
-  fontSize: '18px',
-  borderRadius: '10px',
+  fontSize: '16px',
+  borderRadius: '10px',  
+  fontFamily: 'MontserratRegular',
   [theme.breakpoints.down('sm')]: {
     width: 'unset',    
-    fontSize: '18px',
+    fontSize: '16px',
+  },  
+  [theme.breakpoints.up('sm')]: {
+    lineHeight: '23px',
   },
 }));
 

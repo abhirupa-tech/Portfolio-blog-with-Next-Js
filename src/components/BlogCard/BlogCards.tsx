@@ -4,7 +4,7 @@ import Background from './../../images/blogImage.jpg';
 import Background2 from './../../images/blogImg2.jpg';
 import Background3 from './../../images/blogbg3.jpg';
 import Background4 from './../../images/blogbg4.jpg';
-import { BlogCard, Card, BlogCardDate, BlogCardHeader, BlogCardImage, BlogContent, Root } from "./BlogCards.styles";
+import { BlogCard, Card, BlogCardDate, BlogCardHeader, BlogCardImage, BlogContent, Root, Header } from "./BlogCards.styles";
 
 
 export interface BlogData {
@@ -31,6 +31,8 @@ const BlogCards: React.FC<Blogs> = ({
 
   return (
     <Root >
+      
+		  <Header>Tech Blogs and Articles</Header>
       <Grid
         container
         direction="row"

@@ -1,4 +1,3 @@
-import { LineWeight } from '@mui/icons-material';
 import { Box, Button, CardContent, CardMedia, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
@@ -19,8 +18,8 @@ export const Card = styled('div')(({ theme }) => ({
   boxShadow: '0 2px 2px rgba(0, 0, 0, 0.1)',
   '&:hover': {
     cursor: 'pointer',    
-    boxShadow: '2px 3px 4px rgba(0, 0, 0, 0.2)',
-    transition: 'all 0.2s ease',
+    boxShadow: '2px 4px 5px rgba(0, 0, 0, 0.3)',
+    transition: 'all 0.15s ease',
   },  
 }));
 
@@ -32,8 +31,27 @@ export const BlogCardImage = styled(CardMedia)(({ theme }) => ({
   [theme.breakpoints.between('sm', 'md')]: {
     height: '130px',
   },
+  [theme.breakpoints.down('sm')]: {
+    height: '130px',
+  },
 }));
 
+export const Header = styled('div')(({ theme }) => ({
+  color: '#3C3C3C',
+  fontFamily: 'MontserratHeaderBold',
+  fontSize: '28px',
+  margin: '2vh 0vh 5vh 0vh',
+  [theme.breakpoints.between('sm', 'md')]: {
+      fontSize: '28px',
+      margin: '2vh 0vh 2vh 0vh',
+  },
+  [theme.breakpoints.down('sm')]: {
+    // marginTop: '2vh',
+      fontSize: '24px',
+      margin: '2vh 0vh 2vh 0vh',
+      padding: '0px',
+  },
+}));
 
 export const BlogCard = styled(Paper)(({ theme }) => ({  
   boxShadow: 'none',
@@ -44,19 +62,14 @@ export const BlogCard = styled(Paper)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     padding: '10px 20px',
     marginTop: '10px',
-    height: '130px', 
+    height: 'fit-content', 
   },
 }));
 
-export const BlogContent = styled(Box)(({ theme }) => ({  
-  // position: 'absolute',
-  // bottom: '20',
-  // left: '30',
-  // right: '30' ,
+export const BlogContent = styled(Box)(({ theme }) => ({
   color: 'black',
   [theme.breakpoints.down('sm')]: {
     fontSize: '3vh',
-    lineHeight: '1.2em',
     WebkitLineClamp: 3,
     bottom: '40',
   },
@@ -75,7 +88,7 @@ export const BlogCardHeader = styled(Box)(({ theme }) => ({
     fontSize: '20px',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '20px',
+    fontSize: '17px',
     WebkitLineClamp: 4,
   },
 }));

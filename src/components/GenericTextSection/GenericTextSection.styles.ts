@@ -27,10 +27,7 @@ export const MentorshipHeader = styled('div')(({ theme }) => ({
     // lineHeight: '7vh',
   },
   [theme.breakpoints.down('sm')]: {
-    // marginTop: '2vh',
-    fontSize: '24px',
-    // letterSpacing: '-2px',
-    // lineHeight: '5vh',
+    fontSize: '18px',
     padding: '0px',
   },
 }));
@@ -38,12 +35,17 @@ export const MentorshipHeader = styled('div')(({ theme }) => ({
 export const MentorshipAbout = styled('div')(({ theme }) => ({
   color: '#000',
   marginTop: '2vh',
-  fontSize: '18px',
   marginBottom: '30px',
+  fontFamily: 'MontserratRegular',
   [theme.breakpoints.between('sm', 'md')]: {
     fontSize: '22px',
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '18px',
+    fontSize: '14x',    
+    lineHeight: '20px',
+  },  
+  [theme.breakpoints.up('md')]: {
+    fontSize: '16px',
+    lineHeight: '23px',
   },
 }));

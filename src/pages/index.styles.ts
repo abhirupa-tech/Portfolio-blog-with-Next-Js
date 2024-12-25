@@ -72,6 +72,40 @@ export const MaterialButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+export const MaterialButtonMini = styled(Button)(({ theme }) => ({
+  textAlign: 'center',
+  alignContent: 'center',
+  color: 'black',
+  margin: '10px 0px',
+  background: '#D8D2C4',
+  borderRadius: '10px',
+  padding: '4px 12px',
+  width: 'fit-content',
+  fontFamily: 'MontserratStandardLight',
+  fontSize: '10px',
+  fontWeight: 600,
+  display: 'inline-block',
+  '&:hover': {
+    background:'#cdbe9d',
+    color: 'black',
+    cursor: 'pointer',
+    shadow: '2px',
+    transition: 'all 0.2s ease-in-out',
+  },  
+  [theme.breakpoints.up('sm') && theme.breakpoints.down('md')]: {
+    fontSize: '12px',
+    fontWeight: 600,
+    marginTop: '2vh',
+    padding: '5px 16px',
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '12px',
+    fontWeight: 600,
+    marginTop: '2vh',
+    padding: '5px 16px',
+  },
+}));
+
 // Define breakpoints for different screen sizes
 export const sizes = {
   desktop: '1030px',

@@ -35,7 +35,7 @@ const IntroductionSection: React.FC<{}> = () => {
       <CustomerReviews/>
       <GenericTextSection header={MENTORSHIP_HEADER} text={MENTORSHIP_ABOUT} shouldShowButton={true} buttonRedirectionLink = "https://topmate.io/abhirupa_mitra" buttonText="Book A Meeting" />   
       <BlogCards {...blogs}/>      
-      <GenericTextSection header={RESEARCH_SECTION_HEADER} text={RESEARCH_SECTION_TEXT} shouldShowButton={true} buttonRedirectionLink = "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AFix5MawdjIyzAYALo_erdHATODxtPGN2Qs1B87Y0gvAiSsHZjFKSGRzcRJ9f9od_z4cHdJFOlv6VY6kwllBon1z4pMr&user=grkaFE8AAAAJ" buttonText="Google Scholar"  />
+      {/* <GenericTextSection header={RESEARCH_SECTION_HEADER} text={RESEARCH_SECTION_TEXT} shouldShowButton={true} buttonRedirectionLink = "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AFix5MawdjIyzAYALo_erdHATODxtPGN2Qs1B87Y0gvAiSsHZjFKSGRzcRJ9f9od_z4cHdJFOlv6VY6kwllBon1z4pMr&user=grkaFE8AAAAJ" buttonText="Google Scholar"  /> */}
       <PortfolioProjects {...projects}/>
       <GenericTextSection header={COMMUNITY_SECTION_HEADER} text={COMMUNITY_SECTION_TEXT} shouldShowButton={false}  />
       
